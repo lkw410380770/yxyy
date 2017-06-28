@@ -1,0 +1,429 @@
+@charset "utf-8";
+
+/* Download : http://www.codefans.net *?
+/* Reset css*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    _overflow: auto;
+    _height: 100%;
+    margin: 0 auto;
+}
+
+html {
+    _overflow: hidden
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: courier new, courier, monospace
+}
+
+small {
+    font-size: 12px
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    list-style: none
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+legend {
+    color: #000
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5 tahoma, arial, sans-serif;
+    vertical-align: middle;
+    cursor: pointer
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.clear {
+    display: block;
+    float: none;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    background: none;
+    border: 0;
+    font-size: 0
+}
+
+
+/*a*/
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+a:hover {
+    color: #ff6600;
+}
+
+
+/*title*/
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 9px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+header{
+    line-height: 100px;
+    img{
+        width:140px;
+        height:60px;
+        margin:20px 20px;
+        float: left;
+    }
+    ul.navBox{
+        margin:0 30px;
+        overflow: hidden;
+        float: left;
+        li{
+            float: left;
+            padding: 0 25px;
+        }
+    }
+    ul.login{
+        overflow: hidden;
+        margin:0 20px;
+        float: left;
+        li{
+            float: left;
+        }
+        i{
+            float: left;
+            padding: 0 5px;
+        }
+    }
+    form{
+        position: relative;
+        border-radius: 25px;
+        border:1px solid #ccc;
+        display: inline-block;
+        height: 24px;
+        margin-top:38px;
+        // overflow: hidden;
+        width:160px;
+        z-index: 8888;
+        i{
+            position: absolute;
+            left:0;
+            top:0;
+            z-index: 9999;
+            color:#000;
+            width:15px;
+            height:24px;
+            text-align: center;
+            line-height: 24px;
+        }
+        input{
+            display: block;
+            width:77%;
+            height:90%;
+            border:none;
+            position: absolute;
+            left:15px;
+            top:;
+            text-indent: 5px;
+            outline:none;
+            z-index: 9998;
+        }
+    }
+
+}
+footer{
+    overflow: hidden;
+    clear: both;
+    .height50{
+        height:50px;
+        overflow: hidden;
+        clear: both;
+    }
+    .link{
+        width:100%;
+        heigth:303px;
+        background-color: #999;
+        overflow: hidden;
+        img{
+            width:180px;
+            height:69px;
+            margin:0 40px;
+            float: left;
+        }
+    }
+    .width1{
+        width:35%;
+    }
+    .width2{
+        width:30%;
+    }
+    .link-info{
+        float: left;
+        overflow: hidden;
+        margin-left: 50px;
+        margin-bottom: 40px;
+        h5{
+            width:85%;
+           margin-left: 5%;
+            line-height: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ccc;
+            color:#fff;
+            font-size: 18px;
+        }
+        ul{
+            li{
+                float: left;
+                margin-left: 5%;
+                line-height: 40px;
+                a{
+                    color:#fff;
+                }
+            }
+        
+        }
+    }
+    .banquan {
+        width: 100%;
+        height: 52px;
+        background: #666;
+        overflow: hidden;
+        line-height: 52px;
+        b {
+            font-weight: normal;
+            margin-left: 60px;
+            color: #fff;
+        }
+        ul {
+            float: right;
+            li {
+                float: left;
+                padding: 0 20px;
+                cursor: pointer;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.height150{
+    height:150px;
+    overflow: hidden;
+    clear: both;
+}
+.slide-nav{
+    width:20%;
+    height:100%;
+    position: fixed;
+    background-color: blue;
+    right:-20%;
+    top:0;
+    z-index: 10000;
+    transition:all .5s;
+    ul{
+        width:100%;
+        height:100%;
+        li{
+            width:100%;
+            text-align: center;
+            line-height: 45px;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+.mask{
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    opacity:1;
+    top:0;
+    background: rgba(0,0,0,.4);
+    z-index: 9998;
+    display: none;
+}
+@media all and (max-width:1422px){
+    header{
+        ul.navBox{
+             margin:0;
+            li{
+                padding: 0 15px;
+            }
+        }
+    }
+}
+@media all and (max-width:1210px){
+    header{
+        .clickEle{
+            width:50px;
+            height:50px;
+            margin-top:25px;
+            background-color: red;
+            float: right;
+            margin-right:15px;
+            position: relative;
+            z-index: 9999;
+        }
+        position: relative;
+        ul.navBox{
+           display: none;
+        }
+        .serBox{
+            width:40%;
+            margin:0 auto;
+            ul.login{
+                margin-left: 25%;
+            }
+        }
+    }
+}
+@media all and (max-width:900px){
+    header{
+        .serBox{
+            width:40%;
+            margin:0 auto;
+            display: flex;
+            justify-content:center;
+            ul.login{
+                margin-left: 10%;
+            }
+        }
+    }
+}
+@media all and (max-width:768px){
+    header{
+        .serBox{
+            width:60%;
+            margin:0 auto;
+            display: flex;
+            justify-content:center;
+            ul.login{
+                margin-left: 10%;
+            }
+        }
+    }
+}
+@media all and (max-width:630px){
+    header{
+        .serBox{
+            display: none;
+        }
+    }
+}
