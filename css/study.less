@@ -1,25 +1,26 @@
 // 头部图片
-.toppic{
-	width:100%;
-	height:306px;
-	text-align: center;
-	line-height: 306px;
-	font-style: 50px;
-	background-color: #ccc;
+.toppic {
+    width: 100%;
+    height: 306px;
+    text-align: center;
+    line-height: 306px;
+    font-style: 50px;
+    background-color: #ccc;
 }
-// end
 
+// end
 // 主体内容
 .wrap{
 	width:100%;
 	max-width:1200px;
 	margin:0 auto;
-	height:500px;
 	position: relative;
 	top:-30px;
 	.left{
 		width:20%;
 		float: left;
+		margin-left: 2%;
+		overflow: hidden;
 		ul{
 			li{
 				wdith:100%;
@@ -40,12 +41,13 @@
 		}
 	}
 	.right{
-		width:75%;
+		width:72%;
 		float: right;
 		padding: 10px 15px;
 		background-color: #fff;
 		border:1px solid #ccc;
-
+		margin-right: 2%;
+		overflow: hidden;
 		header{
 			width:100%;
 			overflow: hidden;
@@ -75,6 +77,7 @@
 			width:100%;
 			border-top:1px solid #000;
 			overflow: hidden;
+			margin-bottom: 30px;
 			a{
 				display: block;
 				width:36px;
@@ -99,51 +102,371 @@
 	}
 }
 // end
-
 // 右侧内容
-.right-box{
-	width:100%;
-	overflow: hidden;
-	margin-top: 20px;
-	margin-bottom: 50px;
-	ul{
-		li{
-			width:100%;
-			float: left;
-			margin-bottom: 15px;
-			.pic{
-				width:30%;
-				height:182px;
-				margin-right:20px;
-				float: left;
-				text-align: center;
-				line-height: 137px;
-				border:1px solid #000;
-			}
-			span.timestr{
-				color:#ccc;
-				line-height: 25px;
-				display: block;
-				margin-bottom: 10px;
-			}
-			h4{
-				width:65%;
-				line-height: 35px;
-				float: left;
-				max-height:70px;
-				overflow: hidden;
-				text-overflow:;
-				font-size: 20px;
-			}
-			p{
-				float: left;
-				width:65%;
-				margin-top:10px;
-				color:#ccc;
-				line-height: 30px;
-				max-height:60px;
-				overflow: hidden;
-			}
-		}
-	}
+.right-box {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    ul {
+        li {
+            width: 100%;
+            float: left;
+            margin-bottom: 15px;
+            .pic {
+                width: 30%;
+                height: 182px;
+                margin-right: 20px;
+                float: left;
+                text-align: center;
+                line-height: 137px;
+                border: 1px solid #000;
+            }
+            span.timestr {
+                color: #ccc;
+                line-height: 25px;
+                display: block;
+                margin-bottom: 10px;
+            }
+            h4 {
+                width: 65%;
+                line-height: 35px;
+                float: left;
+                max-height: 70px;
+                overflow: hidden;
+                text-overflow: ;
+                font-size: 20px;
+            }
+            p {
+                float: left;
+                width: 65%;
+                margin-top: 10px;
+                color: #ccc;
+                line-height: 30px;
+                max-height: 60px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+
+
+@media all and(max-width:1040px) {
+    .wrap {
+        .left {
+            width: 18%;
+            ul {
+                li {
+                    span {
+                        padding: 20px 10px;
+                    }
+                }
+            }
+        }
+        .right {
+            .right-box {
+                .right-top {
+                    .top-left {
+                        width: 100%;
+                        .img {
+                            height: 200px;
+                            line-height: 200px;
+                        }
+                    }
+                    .top-right {
+                        margin-top: 30px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and(max-width:850px) {
+    .wrap {
+        .left {
+            width: 18%;
+            ul {
+                li {
+                	text-align: center;
+                    span {
+                    	display: block;
+                    	width: 100%;
+                        padding: 20px 0px;
+                    }
+                    i{
+                    	display: none;
+                    }
+                }
+            }
+        }
+        .right{
+        	.right-box{
+        		ul{
+        			li{
+        				h4{
+        					font-size:15px;
+        				}
+        			}
+        		}
+        	}
+        }
+    }
+}
+@media all and(max-width:820px) {
+    .wrap {
+        .left {
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            overflow: hidden;
+            ul {
+                li {
+                    width: 30%;
+                    margin-left: 2.5%;
+                    float: left;
+                }
+            }
+        }
+        .right {
+            width: 100%;
+            float: none;
+            margin-right: 0;
+            padding: 0;
+            border-top: none;
+            header {
+                width: 95%;
+                margin: 0 auto;
+                overflow: hidden;
+                margin-top: 25px;
+                margin-bottom: 20px;
+            }
+            .right-box {
+                width: 95%;
+                margin: 0 auto;
+                ul {
+                    li {}
+                }
+                .right-top {
+                    .top-right {
+                        ul {
+                            li {
+                                width: 100%;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .right-bottom {
+                    ul {
+                        li {
+                            width: 50%;
+                            margin-left: 0;
+                            .pic {
+                                width: 90%;
+                                float: none;
+                                margin: 0 auto;
+                            }
+                            span {
+                                width: 90%;
+                                margin: 0 auto;
+                                line-height: 40px;
+                                float: none;
+                            }
+                            h4 {
+                                float: none;
+                                width: 90%;
+                                margin: 0 auto;
+                                font-size: 14px;
+                            }
+                            p {
+                                float: none;
+                                width: 90%;
+                                margin: 0 auto;
+                                line-height: 25px;
+                                max-height: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+            .page {
+                border-top: none;
+                width: 95%;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                a.prev {
+                    margin-left: 0;
+                }
+                a.prev,
+                a.next {
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+
+@media all and(max-width:648px) {
+    .wrap {
+        .left {
+            ul {
+                li {
+                    font-size: 14px;
+                    text-align: center;
+                    span {
+                        padding: 10px 0px;
+                    }
+                    i {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        .right {
+            .right-box {
+                ul {
+                    li {
+                        width: 95%;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and(max-width:510px) {
+	.wrap {
+        .right {
+            .right-box {
+                ul {
+                    li {
+                        width: 100%;
+                        margin-bottom: 20px;
+                        .pic{
+                        	width:100%;
+                        	float: none;
+                        }
+                        span{
+                        	width:100%;
+                        	text-align: center;
+                        	line-height: 40px;
+                        }
+                        h4{
+                        	float: none;
+                        	width:100%;
+                        	line-height: 30px;
+                        	max-height: 60px;
+                        	text-indent: 2em;
+                        }
+                        p{
+                        	float: none;
+                        	width:100%;
+                        	line-height: 25px;
+                        	max-height: 50px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and(max-width:475px) {
+    .wrap {
+        .left {
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            overflow: hidden;
+            ul {
+                li {
+                    font-size: 14px;
+                    text-align: center;
+                    span {
+                        padding: 10px 0px;
+                        text-align: center;
+                    }
+                    i {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        .right {
+            header {
+                .r-head {
+                    ul {
+                        display: none;
+                    }
+                }
+            }
+            .page {
+                a {
+                    width: 25px;
+                    height: 30px;
+                    line-height: 30px;
+                }
+                a.prev {
+                    width: 70px;
+                }
+                a.next {
+                    width: 70px;
+                }
+            }
+            .right-box {
+                .right-bottom {
+                    ul {
+                        li {
+                            width: 100%;
+                            .pic {
+                                width: 100%;
+                            }
+                            span {
+                                text-align: center;
+                                width: 100%;
+                            }
+                            h4 {
+                                width: 100%;
+                            }
+                            p {
+                                float: none;
+                                width: 90%;
+                                margin: 0 auto;
+                                line-height: 25px;
+                                max-height: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and(max-width:375px) {
+    .wrap {
+        .left {
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            overflow: hidden;
+            ul {
+                li {
+                    font-size: 14px;
+                    text-align: center;
+                    span {
+                        display: block;
+                        width: 100%;
+                        padding: 10px 0;
+                        text-align: center;
+                    }
+                    i {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }

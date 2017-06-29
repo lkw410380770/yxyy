@@ -136,7 +136,7 @@ a:hover {
     color: #ff6600;
 }
 
-
+@r:50rem;
 /*title*/
 
 h1 {
@@ -180,8 +180,9 @@ a {
 body {
     font-family: "微软雅黑";
 }
-header{
+.p-head{
     line-height: 100px;
+    height:100px;
     img{
         width:140px;
         height:60px;
@@ -360,7 +361,7 @@ footer{
     display: none;
 }
 @media all and (max-width:1422px){
-    header{
+    .p-head{
         ul.navBox{
              margin:0;
             li{
@@ -369,8 +370,9 @@ footer{
         }
     }
 }
+
 @media all and (max-width:1210px){
-    header{
+     .p-head{
         .clickEle{
             width:50px;
             height:50px;
@@ -394,8 +396,33 @@ footer{
         }
     }
 }
+@media all and (max-width:1046px){
+    footer{
+            .link-info{
+                margin-left:0;
+            }
+        
+    }
+}
+@media all and (max-width:968px){
+    footer{
+            .link{
+                img{
+                    float: none;
+                    margin:0 auto;
+                    display: block;
+                }
+            }
+            .link-info{
+                width:40%;
+                margin-left:6%;
+                margin-top:30px;
+            }
+        
+    }
+}
 @media all and (max-width:900px){
-    header{
+     .p-head{
         .serBox{
             width:40%;
             margin:0 auto;
@@ -407,8 +434,48 @@ footer{
         }
     }
 }
+@media all and (max-width:850px){
+    footer{
+        .banquan{
+            text-align: center;
+            position: relative;
+            b{
+                margin:0;
+            }
+            ul{
+                width:50px;
+                height:52px;
+                background: red;
+                padding: 0;
+                
+                overflow:visible;
+                position: absolute;
+                right:10px;
+                float: none;
+                bottom:0;
+                li{
+                    padding: 0;
+                    width:100%;
+                    height:100%;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
 @media all and (max-width:768px){
-    header{
+    footer{
+        .banquan{
+            text-align: center;
+            position: relative;
+            b{
+                margin:0;
+                font-size: 14/@r;
+            }
+        }
+    }
+     .p-head{
         .serBox{
             width:60%;
             margin:0 auto;
@@ -421,7 +488,7 @@ footer{
     }
 }
 @media all and (max-width:630px){
-    header{
+     .p-head{
         .serBox{
             display: none;
         }

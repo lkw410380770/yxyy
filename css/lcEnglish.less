@@ -53,6 +53,7 @@
 			overflow: hidden;
 			border-bottom:1px solid #ccc;
 			padding-bottom:10px;
+			height:auto;
 			div.r-head{
 				line-height: 30px;
 				span{
@@ -153,6 +154,39 @@
 		}
 	}
 }
+@media all and(max-width:1040px){
+	.wrap{
+		.left{
+			width:18%;
+		}
+	}
+}
+@media all and (max-width:1030px){
+	.wrap{
+		.left{
+			ul{
+				li{
+					span{
+						padding: 20px 5px;
+					}
+				}
+			}
+		}
+	}
+}
+@media all and (max-width:880px){
+	.wrap{
+		.left{
+			ul{
+				li{
+					i{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
 @media all and(max-width:820px){
 	.wrap{
 		.left{
@@ -165,6 +199,9 @@
 					width:30%;
 					margin-left: 2.5%;
 					float: left;
+					i{
+						display: block;
+					}
 				}
 			}
 		}

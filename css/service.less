@@ -14,12 +14,13 @@
 	width:100%;
 	max-width:1200px;
 	margin:0 auto;
-	height:500px;
 	position: relative;
 	top:-30px;
 	.left{
 		width:20%;
 		float: left;
+		margin-left: 2%;
+		overflow: hidden;
 		ul{
 			li{
 				wdith:100%;
@@ -40,11 +41,13 @@
 		}
 	}
 	.right{
-		width:75%;
+		width:72%;
 		float: right;
 		padding: 10px 15px;
 		background-color: #fff;
 		border:1px solid #ccc;
+		margin-right: 2%;
+		overflow: hidden;
 		header{
 			width:100%;
 			overflow: hidden;
@@ -74,6 +77,7 @@
 			width:100%;
 			border-top:1px solid #000;
 			overflow: hidden;
+			margin-bottom: 30px;
 			a{
 				display: block;
 				width:36px;
@@ -97,6 +101,7 @@
 		}
 	}
 }
+// end
 // end
 
 // 右侧内容
@@ -234,5 +239,257 @@
 		clear: both;
 		width: 100%;
 		margin:30px 0;
+	}
+}
+@media all and(max-width:1040px){
+	.wrap{
+		.left{
+			width:18%;
+		}
+		.right{
+			.right-box{
+				.right-top{
+					.top-left{
+						width:100%;
+						.img{
+							height:200px;
+							line-height: 200px;
+						}
+					}
+					.top-right{
+						margin-top:30px;
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+}
+@media all and(max-width:820px){
+	.wrap{
+		.left{
+			float: none;
+			width:100%;
+			margin-left: 0;
+			overflow: hidden;
+			ul{
+				li{
+					width:30%;
+					margin-left: 2.5%;
+					float: left;
+				}
+			}
+		}
+		.right{
+			width:100%;
+			float: none;margin-right:0;
+			padding: 0;
+			border-top:none;
+			header{
+				width:95%;
+				margin:0 auto;
+				overflow: hidden;
+				margin-top: 25px;
+			}
+			.right-box{
+				width:95%;
+				margin:0 auto;
+				ul{
+					li{
+						width:46.25%;
+						margin-left: 2.5%;
+					}
+				}
+				.right-top{
+					.top-right{
+						ul{
+							li{
+								
+								width:100%;
+								margin-left: 0;
+							}
+						}
+					}
+				}
+				.right-bottom{
+					ul{
+						li{
+							width:50%;
+							margin-left: 0;
+							.pic{
+								width:90%;
+								float: none;
+								margin:0 auto;
+							}
+							span{
+								width:90%;
+								margin:0 auto;
+								line-height: 40px;
+								float: none;
+							}
+							h4{
+								float: none;
+								width:90%;
+								margin:0 auto;
+								font-size: 14px;
+
+							}
+							p{
+								float: none;
+								width:90%;
+								margin:0 auto;
+								line-height: 25px;
+								max-height: 50px;
+							}
+						}
+					}
+				}
+			}
+			.page{
+			border-top:none;
+			width:95%;
+			margin:0 auto;
+			margin-bottom: 30px;
+			a.prev{
+				margin-left: 0;
+			}
+			a.prev,a.next{
+				width:80px;
+			}
+		}
+		}
+	}
+}
+@media all and(max-width:648px){
+	.wrap{
+		.left{
+			ul{
+				li{
+					font-size:14px;
+					span{
+						padding: 10px;
+					}
+					i{
+						padding: 10px;
+					}
+				}
+			}
+		}
+		.right{
+			.right-box{
+				ul{
+					li{
+						width:95%;
+						margin-bottom:20px;
+					}
+				}
+			}
+		
+		}
+	}
+}
+@media all and(max-width:475px){
+	.wrap{
+		.left{
+			float: none;
+			width:100%;
+			margin-left: 0;
+			overflow: hidden;
+			ul{
+				li{
+					font-size:14px;
+					span{
+						padding: 10px;
+						text-align: center;
+					}
+					i{
+						padding: 10px;
+						
+					}
+				}
+			}
+		}
+		.right{
+			header{
+				.r-head{
+					ul{
+						display: none;
+					}
+				}
+			}
+			.page{
+				a{
+					width:25px;
+					height:30px;
+					line-height: 30px;
+				}
+				a.prev{
+					width:70px;
+				}
+				a.next{
+					width:70px;
+				}
+			}
+			.right-box{
+				.right-bottom{
+					ul{
+						li{
+							width:100%;
+							
+							.pic{
+								width:100%;
+								
+							}
+							span{
+								text-align: center;
+								width:100%;
+								
+							}
+							h4{
+								
+								width:100%;
+								
+
+							}
+							p{
+								float: none;
+								width:90%;
+								margin:0 auto;
+								line-height: 25px;
+								max-height: 50px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media all and(max-width:375px){
+	.wrap{
+		.left{
+			float: none;
+			width:100%;
+			margin-left: 0;
+			overflow: hidden;
+			ul{
+				li{
+					font-size:14px;
+					text-align:center;
+					
+					span{
+						display: block;
+						width:100%;
+						padding: 10px 0;
+						text-align: center;
+					}
+					i{
+						display: none;
+					
+						
+					}
+				}
+			}
+		}
 	}
 }
