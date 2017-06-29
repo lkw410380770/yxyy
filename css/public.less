@@ -183,25 +183,34 @@ body {
 .p-head{
     line-height: 100px;
     height:100px;
+    position: relative;
     img{
         width:140px;
         height:60px;
         margin:20px 20px;
         float: left;
     }
+    .serBox{
+        max-width: 300px;
+        width:25%;
+        position: absolute;
+        right:0;
+        top:0;
+    }
     ul.navBox{
-        margin:0 30px;
+        width:55%;
+        max-width:900px;
         overflow: hidden;
-        float: left;
+        margin-left: 25%;
         li{
             float: left;
-            padding: 0 25px;
+            padding: 0 2.5%;
         }
     }
     ul.login{
         overflow: hidden;
-        margin:0 40px;
         float: left;
+
         li{
             float: left;
         }
@@ -220,6 +229,7 @@ body {
         // overflow: hidden;
         width:160px;
         z-index: 8888;
+         margin-left:10px;
         i{
             position: absolute;
             left:0;
@@ -360,19 +370,24 @@ footer{
     z-index: 9998;
     display: none;
 }
-@media all and (max-width:1422px){
+@media all and (max-width:1480px){
     .p-head{
         ul.navBox{
-             margin:0;
+         margin-left: 20%;
             li{
-                padding: 0 15px;
+                padding: 0 2%;
             }
         }
     }
 }
-
-@media all and (max-width:1210px){
-     .p-head{
+@media all and (max-width:1304px){
+    .p-head{
+        ul.navBox{
+         margin-left: 15%;
+            li{
+                padding: 0 2%;
+            }
+        }
         .clickEle{
             width:50px;
             height:50px;
@@ -388,10 +403,12 @@ footer{
            display: none;
         }
         .serBox{
-            width:40%;
+            position: static;
+            width:50%;
             margin:0 auto;
-            ul.login{
-                margin-left: 25%;
+            max-width:355px;
+            form{
+                width:260px;
             }
         }
     }
@@ -404,14 +421,11 @@ footer{
         
     }
 }
+@media all and (max-width:910px){
+  
+}
 @media all and (max-width:968px){
-    .p-head{
-        .serBox{
-            ul.login{
-                margin-left: 20%;
-            }
-        }
-    }
+   
     footer{
             .link{
                 img{
@@ -428,19 +442,7 @@ footer{
         
     }
 }
-@media all and (max-width:900px){
-     .p-head{
-        .serBox{
-            width:40%;
-            margin:0 auto;
-            display: flex;
-            justify-content:center;
-            ul.login{
-                margin-left: 10%;
-            }
-        }
-    }
-}
+
 @media all and (max-width:850px){
     footer{
         .banquan{
@@ -471,15 +473,7 @@ footer{
         }
     }
 }
-@media all and (max-width:810px){
-    .p-head{
-        .serBox{
-            ul.login{
-                margin-left: 0;
-            }
-        }
-    }
-}
+
 @media all and (max-width:768px){
     footer{
         .banquan{
@@ -491,22 +485,10 @@ footer{
             }
         }
     }
-     .p-head{
+    .p-head{
         .serBox{
-            width:60%;
-            margin:0 auto;
-            display: flex;
-            justify-content:center;
-            ul.login{
-                margin-left: 10%;
-            }
+           display: none;
         }
     }
 }
-@media all and (max-width:630px){
-     .p-head{
-        .serBox{
-            display: none;
-        }
-    }
-}
+
