@@ -9,6 +9,7 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 	margin-top: 60px;
+	padding-bottom: 40px;
 }
 
 
@@ -240,11 +241,13 @@ body {
 	background-color: darkkhaki;
 	margin: 0 4px;
 }
+
 @media only screen and (max-width: 450px) {
 	.left .downShare {
-	margin-top: 150px;
+		margin-top: 150px;
+	}
 }
-}
+
 
 /*评论部分*/
 
@@ -362,6 +365,21 @@ body {
 	line-height: 30px;
 	border: 1px solid #CCCCCC;
 	margin: 0px 6px;
+}
+
+@media only screen and (max-width: 500px) {
+	.left .evaluateWrap .existence .pagination span:nth-child(2) {
+		display: none;
+	}
+	.left .evaluateWrap .existence .pagination span:nth-child(3) {
+		display: none;
+	}
+	.left .evaluateWrap .existence .pagination span:nth-child(4) {
+		display: none;
+	}
+	.left .evaluateWrap .existence .pagination span:nth-child(5) {
+		display: none;
+	}
 }
 
 

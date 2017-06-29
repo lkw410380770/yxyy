@@ -143,6 +143,7 @@ body {
 		display: inline-block;
 		width: 100px;
 		height: 34px;
+		font-size: 14px;
 		background-color: gainsboro;
 		text-align: center;
 		line-height: 34px;

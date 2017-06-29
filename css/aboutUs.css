@@ -6,6 +6,7 @@ body {
 
 .content {
 	width: 100%;
+	padding-bottom: 40px;
 }
 
 
@@ -56,6 +57,7 @@ body {
 	width: 90%;
 	margin: 0 auto;
 	margin-top: 110px;
+	text-align: center;
 }
 
 .content .effect h2 {
@@ -155,6 +157,8 @@ body {
 .content .duty .moduleWrap .module p {
 	text-align: left;
 	font-size: 24px;
+	max-height: 46px;
+	overflow: hidden;
 	color: black;
 	padding: 20px 0px;
 }
