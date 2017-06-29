@@ -1,0 +1,174 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	width: 400px;
+	padding: 20px;
+	border: 1px solid gainsboro;
+	border-radius: 6px;
+	margin: 120px auto;
+}
+
+@media only screen and (max-width: 500px) {
+	.content {
+		width: 90%;
+		padding: 20px 6px;
+		border: 1px solid gainsboro;
+		border-radius: 6px;
+		margin: 120px auto;
+	}
+}
+
+.content h2 {
+	font-size: 24px;
+	padding-bottom: 20px;
+}
+
+.content h2 a {
+	font-size: 14px;
+	font-weight: normal;
+	padding-bottom: 2px;
+	text-decoration: underline;
+	float: right;
+	margin-top: 16px;
+}
+
+.content p {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.content .input {
+	border: 1px solid black;
+	border-radius: 4px;
+	position: relative;
+}
+
+.content .input span {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: darkkhaki;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
+
+.content .input .show {
+	background-color: red;
+	position: absolute;
+	top: 5px;
+	left: 340px;
+}
+
+.content .input input {
+	width: 310px;
+	margin-left: 60px;
+	font-size: 16px;
+	border: none;
+	padding: 12px 0px;
+	outline: none;
+}
+
+.content .input input:hover {
+	border: none;
+	outline: none;
+}
+
+@media only screen and (max-width: 500px) {
+	.content p {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 40px;
+	}
+	.content .input span {
+		position: absolute;
+		top: 2px;
+		left: 6px;
+	}
+	.content .input .show {
+		position: absolute;
+		top: 2px;
+		left: 80%;
+	}
+	.content .input input {
+		width: 80%;
+		margin-left: 18%;
+		font-size: 14px;
+		border: none;
+		padding: 12px 0px;
+		outline: none;
+	}
+}
+
+
+/*获取验证码*/
+
+.content .yzm {
+	text-align: center;
+}
+
+.content .yzm input {
+	width: 170px;
+	height: 36px;
+	outline: none;
+	background-color: white;
+	border-radius: 2px;
+	text-align: center;
+}
+
+.content .yzm span {
+	display: inline-block;
+	width: 128px;
+	height: 34px;
+	background-color: gainsboro;
+	text-align: center;
+	line-height: 34px;
+	margin-left: 50px;
+}
+
+@media only screen and (max-width: 500px) {
+	.content .yzm input {
+		width: 120px;
+		height: 36px;
+		outline: none;
+		background-color: white;
+		border-radius: 2px;
+		text-align: center;
+	}
+	.content .yzm span {
+		display: inline-block;
+		width: 100px;
+		height: 34px;
+		background-color: gainsboro;
+		text-align: center;
+		line-height: 34px;
+		margin-left: 20px;
+	}
+}
+
+
+/*注册*/
+
+.content .register {
+	width: 100%;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	background-color: gainsboro;
+	margin-top: 30px;
+}
+
+.content .register:hover {
+	cursor: pointer;
+}
+
+
+/*其他操作*/
+
+.content .operation {
+	font-size: 14px;
+}

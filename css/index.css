@@ -1,0 +1,532 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	width: 100%;
+}
+
+
+/*了解更多按钮样式*/
+
+.moreBtn {
+	width: 142px;
+	height: 46px;
+	text-align: center;
+	line-height: 46px;
+	border: 1px solid gainsboro;
+	border-radius: 46px;
+}
+
+.moreBtn:hover {
+	cursor: pointer;
+}
+
+
+/*banner*/
+
+.content .banner {
+	width: 100%;
+	height: 540px;
+}
+
+.banner .swiper-slide {
+	width: 100%;
+	height: 100%;
+	background-color: gray;
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	line-height: 540px;
+}
+
+
+/*图片或视频介绍部分*/
+
+.content .introduce {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.introduce .wrap {
+	display: inline-block;
+	width: 60%;
+	max-width: 700px;
+	height: 432px;
+	background-color: darkkhaki;
+	margin-top: -54px;
+	position: relative;
+	z-index: 10;
+}
+
+.introduce .text {
+	display: inline-block;
+	width: 38%;
+	float: right;
+}
+
+@media only screen and (max-width: 900px) {
+	.content .introduce {
+		text-align: center;
+	}
+	.introduce .wrap {
+		width: 100%;
+		height: 432px;
+		background-color: darkkhaki;
+		margin-top: 40px;
+		clear: both;
+	}
+	.introduce .text {
+		display: inline-block;
+		width: 90%;
+		float: none;
+	}
+	.introduce .text .moreBtn {
+		margin: 0 auto;
+	}
+}
+
+.introduce .text h2 {
+	font-size: 40px;
+	padding: 40px 0px;
+}
+
+.introduce .text p {
+	font-size: 18px;
+	color: #666666;
+	line-height: 34px;
+	padding-bottom: 40px;
+}
+
+
+/*资讯部分*/
+
+.content .information {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 90px;
+}
+
+.information .modular {
+	display: inline-block;
+	width: 32%;
+}
+
+.information .modular:nth-child(2) {
+	margin: 0 1.6%;
+}
+
+@media only screen and (max-width: 1100px) {
+	.information .modular {
+		display: block;
+		width: 98%;
+		margin: 0 auto;
+		margin-bottom: 120px;
+	}
+	.information .modular:nth-child(2) {
+		margin: 0 auto;
+		margin-bottom: 120px;
+	}
+}
+
+
+/*资讯分类标题*/
+
+.information .modular .title {
+	font-size: 28px;
+	padding-bottom: 30px;
+}
+
+.information .modular .title span {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-color: mediumaquamarine;
+	margin: 0px 20px -4px 0px;
+}
+
+
+/*资讯分类图片*/
+
+.information .modular .showImg {
+	width: 100%;
+	height: 208px;
+	background-color: darkkhaki;
+	margin-top: 30px;
+}
+
+
+/*资讯小内容*/
+
+.information .modular .text {
+	width: 100%;
+	margin-top: 30px;
+}
+
+.information .modular .text .textImg {
+	display: inline-block;
+	width: 38%;
+	height: 108px;
+	background-color: darkkhaki;
+}
+
+.information .modular .text .wb {
+	width: 58%;
+	float: right !important;
+}
+
+.information .modular .text .wb h2 {
+	font-size: 16px;
+	max-height: 46px;
+	overflow: hidden;
+	font-weight: normal;
+}
+
+.information .modular .text .wb p {
+	color: #999999;
+	font-size: 14px;
+	margin-top: 16px;
+	height: 42px;
+	overflow: hidden;
+}
+
+
+/*资讯了解更多按钮*/
+
+.information .modular .moreBtn {
+	margin-top: 40px;
+}
+
+@media only screen and (max-width:1100px) {
+	.information .modular .moreBtn {
+		float: right;
+	}
+}
+
+
+/*教师发展部分*/
+
+.content .growth {
+	width: 100%;
+	height: 500px;
+	background-color: gainsboro;
+	margin-top: 60px;
+	padding-top: 90px;
+}
+
+.content .growth h2 {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.content .growth h5 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #999999;
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+
+/*教师发展模块*/
+
+.content .growth .moduleWrap {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.content .growth .moduleWrap .module {
+	display: inline-block;
+	width: 32%;
+	height: 380px;
+	position: relative;
+	margin-bottom: -116px;
+	z-index: 10;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.content .growth .moduleWrap .module:nth-child(2) {
+	margin: 0 1.2%;
+}
+
+@media only screen and (max-width: 960px) {
+	.content .growth {
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.content .growth .moduleWrap .module {
+		display: inline-block;
+		width: 90%;
+		height: 230px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		text-align: left;
+	}
+	.content .growth .moduleWrap .module:nth-child(2) {
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+}
+
+.content .growth .moduleWrap .module .showImg {
+	width: 100%;
+	height: 230px;
+	background-color: darkkhaki;
+}
+
+@media only screen and (max-width: 960px) {
+	.content .growth .moduleWrap .module .showImg {
+		display: inline-block;
+		width: 38%;
+	}
+	.content .growth .moduleWrap .module .text {
+		width: 58%;
+		float: right;
+	}
+}
+
+.content .growth .moduleWrap .module h3 {
+	font-size: 20px;
+	padding: 20px 0px 0px 20px;
+}
+
+.content .growth .moduleWrap .module p {
+	font-size: 14px;
+	padding: 20px;
+	color: #666666;
+	max-height: 38px;
+	overflow: hidden;
+}
+
+
+/*英语赛事*/
+
+.content .match {
+	width: 100%;
+	margin-top: 120px;
+	padding-top: 90px;
+}
+
+.content .match h2 {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.content .match h5 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #999999;
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+
+/*赛事模块*/
+
+.content .match .moduleWrap {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.content .match .moduleWrap .module {
+	display: inline-block;
+	width: 24%;
+	margin: 0 0.2%;
+}
+
+@media only screen and (max-width: 960px) {
+	.content .match {
+		width: 100%;
+		text-align: center;
+	}
+	.content .match .moduleWrap .module {
+		display: inline-block;
+		width: 90%;
+		height: 230px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		text-align: left;
+	}
+	.content .match .moduleWrap .module:nth-child(2) {
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+}
+
+.content .match .moduleWrap .module .showImg {
+	width: 100%;
+	height: 230px;
+	background-color: darkkhaki;
+}
+
+@media only screen and (max-width: 960px) {
+	.content .match .moduleWrap .module .showImg {
+		display: inline-block;
+		width: 38%;
+	}
+	.content .match .moduleWrap .module .text {
+		width: 58%;
+		float: right;
+	}
+}
+
+.content .match .moduleWrap .module h3 {
+	font-size: 16px;
+	font-weight: normal;
+	padding: 20px 0px 0px 10px;
+}
+
+.content .match .moduleWrap .module p {
+	font-size: 14px;
+	padding: 10px;
+	color: #666666;
+	max-height: 38px;
+	overflow: hidden;
+}
+
+
+/*英语赛事查看更多模块*/
+
+.content .match .moreBtn {
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+/*科研服务部分*/
+
+.content .service {
+	width: 100%;
+	margin-top: 20px;
+	padding-top: 90px;
+}
+
+.content .service h2 {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.content .service h5 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #999999;
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+.content .service ul {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.content .service ul li {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 0 20px;
+}
+
+.content .service ul li a {
+	color: #666666;
+	font-size: 18px;
+}
+
+.content .service ul li a:hover {
+	cursor: pointer;
+	font-weight: bold;
+	color: black;
+}
+
+
+/*科研服务模块*/
+
+.content .service .moduleWrap {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.content .service .moduleWrap .module {
+	display: inline-block;
+	width: 48%;
+	margin: 0 0.5%;
+}
+
+@media only screen and (max-width: 960px) {
+	.content .service {
+		width: 100%;
+		text-align: center;
+	}
+	.content .service .moduleWrap .module {
+		display: inline-block;
+		width: 90%;
+		height: 230px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		text-align: left;
+	}
+	.content .service .moduleWrap .module:nth-child(2) {
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+}
+
+.content .service .moduleWrap .module .showImg {
+	display: inline-block;
+	width: 48%;
+	height: 230px;
+	background-color: darkkhaki;
+}
+
+.content .service .moduleWrap .module .text {
+	width: 48%;
+	float: right;
+}
+
+.content .service .moduleWrap .module h3 {
+	font-size: 16px;
+	font-weight: normal;
+	padding: 20px 0px 0px 0px;
+}
+
+.content .service .moduleWrap .module p {
+	font-size: 14px;
+	padding: 0px;
+	color: #666666;
+	max-height: 38px;
+	overflow: hidden;
+}
+
+
+/*科研服务查看更多模块*/
+
+.content .service .moreBtn {
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
