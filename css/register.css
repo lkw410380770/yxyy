@@ -39,6 +39,7 @@ body {
 .content p {
 	width: 100%;
 	margin-top: 40px;
+	padding: 4px 0px;
 }
 
 .content .input {

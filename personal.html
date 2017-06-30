@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
 		<title>个人中心</title>
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<link rel="stylesheet" type="text/css" href="css/personal.css" />
@@ -93,26 +93,26 @@
 			<div class="left">
 				<ul>
 					<li>
-						<a href="">个人资料</a>
+						<a href="personal.html">个人资料</a>
 					</li>
 					<li>
-						<a href="">修改密码</a>
+						<a href="editPassword.html">修改密码</a>
 					</li>
 					<li>
-						<a href="">我的评论</a>
+						<a href="personal.html">我的评论</a>
 					</li>
 					<li>
-						<a href="">安全退出</a>
+						<a href="index.html">安全退出</a>
 					</li>
 				</ul>
 			</div>
 			<div class="right">
 				<div>
-					<h2>个人资料</h2><span>编辑</span></div>
-				<p><label>昵称</label><span>显示用户名称</span></p>
-				<p><label>姓名</label><span>王某某</span></p>
-				<p><label>手机号</label><span>130****5585</span></p>
-				<p><label>性别</label><span>男</span></p>
+					<h2>个人资料</h2><span id="editBtn">编辑</span></div>
+				<p><label>昵称</label><span>显示用户名称</span><input class="edit" type="text" name="" id="" value="" placeholder="请输入用户昵称" /></p>
+				<p><label>姓名</label><span>王某某</span><input class="edit" type="text" name="" id="" value="" placeholder="请输入姓名" /></p>
+				<p><label>手机号</label><span>130****5585</span><input class="edit" type="tel" name="" id="" value="" placeholder="请输入电话" /></p>
+				<p><label>性别</label><span>男</span><input class="edit" type="text" name="" id="" value="" placeholder="男/女" /></p>
 			</div>
 		</div>
 
@@ -194,5 +194,17 @@
 		</footer>
 
 	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#editBtn").click(function(){
+			if($(this).html()=="编辑"){
+				$(this).html("保存")
+				$(".edit").show(200);
+			}else{
+				$(this).html("编辑");
+				$(".edit").hide(200);
+			}
+		})
+	</script>
 
 </html>
