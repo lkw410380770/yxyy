@@ -1,62 +1,100 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
 		<title>注册</title>
-		<link rel="stylesheet" type="text/css" href="css/public.css"/>
-		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
 		<script src="js/piblic.js"></script>
 	</head>
+
 	<body>
 		<div class="mask"></div>
-	<div class="slide-nav">
-		<div class="height150"></div>
-		<ul>
-			<li><a href="index.html">首页</a></li>
-			<li><a href="aboutUs.html">关于我们</a></li>
-			<li><a href="support.html">教学支持</a></li>
-			<li><a href="study.html">在线学习</a></li>
-			<li><a href="lcEnglish.html">临床英语</a></li>
-			<li><a href="development.html">教师发展</a></li>
-			<li><a href="match.html">英语赛事</a></li>
-			<li><a href="service.html">科研服务</a></li>
-		</ul>
-	</div>
-	<header class="p-head">
-		<img src="" alt="logo">
-		<div class="clickEle"></div>
-		<ul class="navBox">
-			<li><a href="index.html">首页</a></li>
-			<li><a href="aboutUs.html">关于我们</a></li>
-			<li><a href="support.html">教学支持</a></li>
-			<li><a href="study.html">在线学习</a></li>
-			<li><a href="lcEnglish.html">临床英语</a></li>
-			<li><a href="development.html">教师发展</a></li>
-			<li><a href="match.html">英语赛事</a></li>
-			<li><a href="service.html">科研服务</a></li>
-		</ul>
-		<div class="serBox">
-			<ul class="login">
-			<li><a href="login.html">登录</a></li>
-			<i>/</i>
-			<li><a href="register.html">注册</a></li>
-		</ul>
-		<form action="">
-			<i>⊙</i>
-			<label for=""></label>
-			<input type="text">
-			
-		</form>
+		<div class="slide-nav">
+			<div class="height150"></div>
+			<ul>
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="aboutUs.html">关于我们</a>
+				</li>
+				<li>
+					<a href="support.html">教学支持</a>
+				</li>
+				<li>
+					<a href="study.html">在线学习</a>
+				</li>
+				<li>
+					<a href="lcEnglish.html">临床英语</a>
+				</li>
+				<li>
+					<a href="development.html">教师发展</a>
+				</li>
+				<li>
+					<a href="match.html">英语赛事</a>
+				</li>
+				<li>
+					<a href="service.html">科研服务</a>
+				</li>
+			</ul>
 		</div>
-	</header>
+		<header class="p-head">
+			<img src="" alt="logo">
+			<div class="clickEle"></div>
+			<ul class="navBox">
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="aboutUs.html">关于我们</a>
+				</li>
+				<li>
+					<a href="support.html">教学支持</a>
+				</li>
+				<li>
+					<a href="study.html">在线学习</a>
+				</li>
+				<li>
+					<a href="lcEnglish.html">临床英语</a>
+				</li>
+				<li>
+					<a href="development.html">教师发展</a>
+				</li>
+				<li>
+					<a href="match.html">英语赛事</a>
+				</li>
+				<li>
+					<a href="service.html">科研服务</a>
+				</li>
+			</ul>
+			<div class="serBox">
+				<ul class="login">
+					<li>
+						<a href="login.html">登录</a>
+					</li>
+					<i>/</i>
+					<li>
+						<a href="register.html">注册</a>
+					</li>
+				</ul>
+				<form action="">
+					<i>⊙</i>
+					<label for=""></label>
+					<input type="text">
+
+				</form>
+			</div>
+		</header>
 		<!--内容部分-->
 		<div class="content">
-			<h2>手机号注册<a href="##">返回登录</a></h2>
+			<h2>手机号注册<a href="login.html">返回登录</a></h2>
 			<hr />
-			<p class="input"><span></span><input type="text" name="" id="" value="" placeholder="请输入手机号码" /></p>
+			<p class="input"><span></span><input type="tel" name="" id="" value="" placeholder="请输入手机号码" /></p>
 			<p class="input"><span></span><input type="text" name="" id="" value="" placeholder="中、英文均可，最长18个英文或9个汉字" /></p>
-			<p class="input"><span></span><input type="password" name="" id="" value="" placeholder="5-20位英文、数字、符号，区分大小写" /><span class="show"></span></p>
+			<p class="input"><span></span><input type="password" name="" id="password" value="" placeholder="5-20位英文、数字、符号，区分大小写" /><span id="passShow" class="show"></span></p>
 			<p class="yzm"><input type="text" name="" id="" value="" placeholder="输入验证码" /><span>短信获取验证码</span></p>
 			<div class="register">
 				注册
@@ -64,44 +102,91 @@
 			<p class="operation"><input type="checkbox" name="" id="" /><label>我已阅读并同意《服务协议》</label></p>
 		</div>
 		<div class="clear"></div>
-	<footer>
-		<div class="link">
-			<div class="height50"></div>
-			<img src="" alt="logo">
-			<div class="link-info width1">
-				<h5>网站导航</h5>
+		<footer>
+			<div class="link">
+				<div class="height50"></div>
+				<img src="" alt="logo">
+				<div class="link-info width1">
+					<h5>网站导航</h5>
+					<ul>
+						<li>
+							<a href="aboutUs.html">关于我们</a>
+						</li>
+						<li>
+							<a href="support.html">教学支持</a>
+						</li>
+						<li>
+							<a href="study.html">在线学习</a>
+						</li>
+						<li>
+							<a href="service.html">科研服务</a>
+						</li>
+						<li>
+							<a href="lcEnglish.html">临床英语</a>
+						</li>
+						<li>
+							<a href="development.html">教师发展</a>
+						</li>
+						<li>
+							<a href="mtch.html">英语赛事</a>
+						</li>
+					</ul>
+				</div>
+				<div class="link-info width2">
+					<h5>友情链接</h5>
+					<ul>
+						<li>
+							<a>南京医科大学</a>
+						</li>
+						<li>
+							<a>医护英语水平考试</a>
+						</li>
+						<li>
+							<a>搜题</a>
+						</li>
+						<li>
+							<a>可可英语网</a>
+						</li>
+						<li>
+							<a>搜狐外语</a>
+						</li>
+						<li>
+							<a>初中英语</a>
+						</li>
+						<li>
+							<a>学前英语</a>
+						</li>
+						<li>
+							<a>南京人事考试网</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="banquan">
+				<b>Copyright © 2003-2017 inspinovation  ICP备8888888号</b>
 				<ul>
-					<li><a href="aboutUs.html">关于我们</a></li>
-					<li><a href="support.html">教学支持</a></li>
-					<li><a href="study.html">在线学习</a></li>
-					<li><a href="service.html">科研服务</a></li>
-					<li><a href="lcEnglish.html">临床英语</a></li>
-					<li><a href="development.html">教师发展</a></li>
-					<li><a href="mtch.html">英语赛事</a></li>
+					<li>
+						<a>图标</a>
+					</li>
+					<li>
+						<a>图标</a>
+					</li>
+					<li>
+						<a>图标</a>
+					</li>
 				</ul>
 			</div>
-			<div class="link-info width2">
-				<h5>友情链接</h5>
-				<ul>
-					<li><a>南京医科大学</a></li>
-					<li><a>医护英语水平考试</a></li>
-					<li><a>搜题</a></li>
-					<li><a>可可英语网</a></li>
-					<li><a>搜狐外语</a></li>
-					<li><a>初中英语</a></li>
-					<li><a>学前英语</a></li>
-					<li><a>南京人事考试网</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="banquan">
-            <b>Copyright © 2003-2017 inspinovation  ICP备8888888号</b>
-            <ul>
-                <li><a>图标</a></li>
-                <li><a>图标</a></li>
-                <li><a>图标</a></li>
-            </ul>
-        </div>
-	</footer>
+		</footer>
 	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#passShow").click(function() {
+			if($("#password").attr("type") == "password") {
+				$("#password").attr("type", "text")
+			} else {
+				$("#password").attr("type", "password")
+			}
+		})
+	</script>
+
 </html>
