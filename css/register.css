@@ -59,12 +59,17 @@ body {
 }
 
 .content .input .show {
-	background-color: red;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: white;
 	position: absolute;
-	top: 5px;
-	left: 340px;
+	top: 20px;
+	left: 360px;
 }
-
+.content .input .show:hover{
+	cursor: pointer;
+}
 .content .input input {
 	width: 310px;
 	margin-left: 60px;
@@ -121,10 +126,12 @@ body {
 	text-align: center;
 }
 
-.content .yzm span {
+.content .yzm button {
 	display: inline-block;
 	width: 128px;
 	height: 34px;
+	outline: none;
+	border: none;
 	background-color: gainsboro;
 	text-align: center;
 	line-height: 34px;

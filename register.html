@@ -1,3 +1,4 @@
+<!--L.z-->
 <!DOCTYPE html>
 <html>
 
@@ -5,6 +6,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
 		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<link rel="stylesheet" type="text/css" href="css/register.css" />
 		<script src="js/public.js"></script>
@@ -131,11 +133,11 @@
 		<div class="content">
 			<h2>手机号注册<a href="login.html">返回登录</a></h2>
 			<hr />
-			<p class="input"><span></span><input type="tel" name="" id="" value="" placeholder="请输入手机号码" /></p>
+			<p class="input"><span></span><input type="tel" name="" id="tel" value="" placeholder="请输入手机号码" /></p>
 			<p class="input"><span></span><input type="text" name="" id="" value="" placeholder="中、英文均可，最长18个英文或9个汉字" /></p>
-			<p class="input"><span></span><input type="password" name="" id="password" value="" placeholder="5-20位英文、数字、符号，区分大小写" /><span id="passShow" class="show"></span></p>
-			<p class="yzm"><input type="text" name="" id="" value="" placeholder="输入验证码" /><span>短信获取验证码</span></p>
-			<div class="register">
+			<p class="input"><span></span><input type="password" name="" id="password" value="" placeholder="5-20位英文、数字、符号，区分大小写" /><span id="passShow" class="show iconfont icon-chakanmima"></span></p>
+			<p class="yzm"><input type="text" name="" id="" value="" placeholder="输入验证码" /><button id="codeBtn">短信获取验证码</button></p>
+			<div class="register" id="register">
 				注册
 			</div>
 			<p class="operation"><input type="checkbox" name="" id="" /><label>我已阅读并同意《服务协议》</label></p>
@@ -218,14 +220,5 @@
 		</footer>
 	</body>
 	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		$("#passShow").click(function() {
-			if($("#password").attr("type") == "password") {
-				$("#password").attr("type", "text")
-			} else {
-				$("#password").attr("type", "password")
-			}
-		})
-	</script>
-
+	<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
 </html>

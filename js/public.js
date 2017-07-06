@@ -10,7 +10,7 @@ window.onload = function() {
     oMask.onclick = function() {
         oBox.style.right = -20 + '%';
         this.style.opacity = 0;
-        this.style.display = 'none;'
+        this.style.display = 'none;';
     }
 }
 
