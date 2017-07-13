@@ -91,7 +91,6 @@ body {
 
 .detailsWrap .details .wrap {
 	padding: 30px 0px 20px 0px;
-	text-align: center;
 }
 
 .detailsWrap .details .wrap div {
@@ -102,13 +101,14 @@ body {
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	background-color: darkkhaki;
-	margin-right: 6px;
-	margin-bottom: -8px;
+	margin-right: 2px;
+	margin-bottom: -12px;
+	font-size: 20px;
+	text-align: center;
 }
 
 .detailsWrap .details .time {
-	float: left;
+	margin-right: 20px;
 }
 
 .detailsWrap .details .share {
@@ -122,9 +122,7 @@ body {
 		display: block;
 		width: 100%;
 		text-align: left;
-	}
-	.detailsWrap .details .share span {
-		margin-top: 20px;
+		padding-top: 30px;
 	}
 }
 
@@ -209,14 +207,21 @@ body {
 
 .left .fabulous span {
 	display: inline-block;
-	width: 24px;
-	height: 24px;
-	background-color: darkkhaki;
-	margin-top: -20px;
+	width: 30px;
+	height: 30px;
+	font-size: 20px;
+	position: absolute;
+	left: 50%;
+	margin-left: -15px;
+	top: -20px;
+}
+
+.left .fabulous span:hover {
+	cursor: pointer;
 }
 
 .left .fabulous p {
-	margin-top: -80px;
+	margin-top: 20px;
 }
 
 @media only screen and (max-width: 450px) {
@@ -229,17 +234,14 @@ body {
 /*文章结束后的分享*/
 
 .left .downShare {
-	width: 100%;
+	width: 140px;
 	text-align: center;
+	margin: 0 auto;
 	margin-top: 60px;
 }
 
-.left .downShare span {
+.left .downShare a {
 	display: inline-block;
-	width: 24px;
-	height: 24px;
-	background-color: darkkhaki;
-	margin: 0 4px;
 }
 
 @media only screen and (max-width: 450px) {

@@ -1,128 +1,386 @@
-html,
-body {
+/*登录*/
+*{
+	padding:0;
+	margin:0;
+}
+
+#login {
 	width: 100%;
 	height: 100%;
 }
 
-.content {
-	width: 400px;
-	padding: 20px;
-	border: 1px solid gainsboro;
-	border-radius: 6px;
-	margin: 120px auto;
+#login .loginWrap {
+	width:340px;
+	height: 100%;
+	background-color: white;
+	margin: 0 auto;
+	border-radius: 15px;
+	position: relative;
+	padding:0 20px;
 }
 
-@media only screen and (max-width: 500px) {
-	.content {
-		width: 90%;
-		padding: 20px 6px;
-		border: 1px solid gainsboro;
-		border-radius: 6px;
-		margin: 120px auto;
-	}
+
+a:hover {
+	cursor: pointer;
 }
 
-.content h2 {
-	font-size: 24px;
-	padding-bottom: 20px;
+#closeLogin {
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	right: 0px;
+	top: -50px;
 }
 
-.content p {
+#closeLogin:hover {
+	cursor: pointer;
+}
+
+#login .loginWrap h2 {
 	width: 100%;
-	margin-top: 30px;
-	padding: 4px 0px;
+	font-weight: normal;
+	font-size: 20px;
+	padding: 30px 0px;
+	text-align: center;
+	position: relative;
+	color：#333；
 }
 
-.content .input {
-	border: 1px solid black;
-	border-radius: 4px;
+#login .loginWrap h2 span {
+	display: inline-block;
+	width: 110px;
+	height: 1px;
+	background-color: gainsboro;
+	position: absolute;
+	top: 48px;
+	z-index: 10;
+}
+
+#login .loginWrap h2 span:nth-child(1) {
+	position: absolute;
+	left: 0px;
+}
+
+#login .loginWrap h2 span:nth-child(2) {
+	position: absolute;
+	right: 0px;
+}
+
+#login .loginWrap .inputs {
+	display: block;
+	font-size: 16px;
+	width: 100%;
+	height:40px;
+	margin-bottom: 30px;
+	border:1px solid #e4e4e4;
+	border-radius:5px;
+	font-size:14px;
+	color:#c5c5c5;
+	text-indent: 20px;
+}
+
+#login .loginWrap .user {
 	position: relative;
 }
 
-.content .input span {
-	display: block;
-	width: 40px;
-	height: 40px;
-	background-color: darkkhaki;
+#login .loginWrap .user .closeUser {
 	position: absolute;
-	top: 5px;
-	left: 10px;
+	top: 12px;
+	right: 20px;
+	width:15px;
+	height:15px;
+	text-align:center;
+	line-height:15px;
+	background:#666;
+	color:#fff;
+	border-radius:50%;
+	font-size:12px;
+	display:none;
 }
-
-.content .input .show {
-	background-color: red;
+#login .loginWrap .user .look{
 	position: absolute;
-	top: 5px;
-	left: 340px;
+	top: 16px;
+	right: 10px;
+	display:block;
+	text-align:center;
+	line-height:15px;
+	color:#6d6a6a;
+	display:none;
+}
+#login .loginWrap .user .yzm{
+	width:210px;
+	height:40px;
+	border-radius:5px;
+	border: 1px solid #e4e4e4;
+	text-indent: 20px;
+}
+.margin20{
+	margin-top:20px;
+}
+#login .loginWrap .user .getYzm{
+	width:110px;
+	height:40px;
+	font-size:12px;
+	color:#c1c1c1;
+	border-radius:5px;
+	border:1px solid #e4e4e4;
+  border-color: rgb(228, 228, 228);
+  background-image: -moz-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+  cursor:pointer;
+  float:right;
+}
+.layui-btn{
+	width:340px;
+	height:40px;
+	border-radius:5px;
+	background-color:#4381e8;
+	margin-top:30px;
+}
+#login .loginWrap a{
+	float:right;
+	font-size:12px;
+	color:#6d6a6a;
+}
+.layui-form-checkbox[lay-skin=primary] i{
+	width:12px;
+	height:12px;
+	line-height:12px;
+	margin-top:1px;
+}
+.layui-form-checkbox[lay-skin=primary] span{
+	font-size:12px;
+	color:#6d6a6a;
+}
+#login .loginWrap a.blue{
+	color:#649fde;
+}
+#login .loginWrap span.shu{
+	float:right;
+	margin:0 8px;
+	color:#eee;
+}
+#login .loginWrap .user .closeUser:hover {
+	cursor: pointer;
 }
 
-.content .input input {
-	width: 310px;
-	margin-left: 60px;
-	font-size: 16px;
-	border: none;
-	padding: 10px 0px;
-	outline: none;
+#login .loginWrap .operation label {
+	font-size: 12px;
+	color:#6d6a6a;
 }
 
-.content .input input:hover {
-	border: none;
-	outline: none;
-}
-@media only screen and (max-width: 500px) {
-	.content p {
-		width: 100%;
-		margin: 0 auto;
-		margin-top: 40px;
-	}
-	.content .input span {
-		position: absolute;
-		top: 2px;
-		left: 6px;
-	}
-	.content .input .show {
-		position: absolute;
-		top: 2px;
-		left: 80%;
-	}
-	.content .input input {
-		width: 80%;
-		margin-left: 18%;
-		font-size: 14px;
-		border: none;
-		padding: 12px 0px;
-		outline: none;
-	}
+#login .loginWrap .operation .other {
+	color: 14px;
+	float: right;
 }
 
+#login .loginWrap .operation .other span {
+	display: inline-block;
+	margin: 0 4px;
+	color: gainsboro;
+}
 
-/*登录*/
-
-.content .login {
+#loginBtn {
 	width: 100%;
-	height: 44px;
+	height: 42px;
+	line-height: 42px;
+	color: white;
+	background-color: #4381e8;
 	text-align: center;
-	line-height: 44px;
-	background-color: gainsboro;
 	margin-top: 30px;
+	border-radius: 4px;
 }
 
-.content .login:hover {
+#loginBtn:hover {
 	cursor: pointer;
 }
 
 
-/*其他操作*/
-
-.content .operation {
-	font-size: 14px;
+//注册
+/*登录*/
+*{
+	padding:0;
+	margin:0;
 }
 
-.content .operation .other {
+#reg {
+	width: 100%;
+	height: 100%;
+}
+
+#reg .loginWrap {
+	width:340px;
+	height: 100%;
+	background-color: white;
+	margin: 0 auto;
+	border-radius: 15px;
+	position: relative;
+	padding:0 20px;
+}
+
+
+a:hover {
+	cursor: pointer;
+}
+
+
+#reg .loginWrap h2 {
+	width: 100%;
+	font-weight: normal;
+	font-size: 20px;
+	padding: 30px 0px;
+	text-align: center;
+	position: relative;
+	color：#333；
+}
+
+#reg .loginWrap h2 span {
+	display: inline-block;
+	width: 110px;
+	height: 1px;
+	background-color: gainsboro;
+	position: absolute;
+	top: 48px;
+	z-index: 10;
+}
+
+#reg .loginWrap h2 span:nth-child(1) {
+	position: absolute;
+	left: 0px;
+}
+
+#reg .loginWrap h2 span:nth-child(2) {
+	position: absolute;
+	right: 0px;
+}
+
+#reg .loginWrap .inputs {
+	display: block;
+	font-size: 16px;
+	width: 100%;
+	height:40px;
+	margin-bottom: 30px;
+	border:1px solid #e4e4e4;
+	border-radius:5px;
+	font-size:14px;
+	color:#c5c5c5;
+	text-indent: 20px;
+}
+
+#reg .loginWrap .user {
+	position: relative;
+}
+
+#reg .loginWrap .user .closeUser {
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	width:15px;
+	height:15px;
+	text-align:center;
+	line-height:15px;
+	background:#666;
+	color:#fff;
+	border-radius:50%;
+	font-size:12px;
+	display:none;
+}
+#reg .loginWrap .user .look{
+	position: absolute;
+	top: 16px;
+	right: 10px;
+	display:block;
+	text-align:center;
+	line-height:15px;
+	color:#6d6a6a;
+	display:none;
+}
+#reg .loginWrap .user .yzm{
+	width:210px;
+	height:40px;
+	border-radius:5px;
+	border: 1px solid #e4e4e4;
+	text-indent: 20px;
+}
+.margin20{
+	margin-top:20px;
+}
+#reg .loginWrap .user .getYzm{
+	width:110px;
+	height:40px;
+	font-size:12px;
+	color:#c1c1c1;
+	border-radius:5px;
+	border:1px solid #e4e4e4;
+  border-color: rgb(228, 228, 228);
+  background-image: -moz-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(238,238,238) 0%, rgb(255,255,255) 100%);
+  cursor:pointer;
+  float:right;
+}
+.layui-btn{
+	width:340px;
+	height:40px;
+	border-radius:5px;
+	background-color:#4381e8;
+	margin-top:30px;
+}
+#reg .loginWrap a{
+	float:right;
+	font-size:12px;
+	color:#6d6a6a;
+}
+.layui-form-checkbox[lay-skin=primary] i{
+	width:12px;
+	height:12px;
+	line-height:12px;
+	margin-top:1px;
+}
+.layui-form-checkbox[lay-skin=primary] span{
+	font-size:12px;
+	color:#6d6a6a;
+}
+#reg .loginWrap a.blue{
+	color:#649fde;
+}
+#reg .loginWrap span.shu{
+	float:right;
+	margin:0 8px;
+	color:#eee;
+}
+#reg .loginWrap .user .closeUser:hover {
+	cursor: pointer;
+}
+
+#reg .loginWrap .operation label {
+	font-size: 12px;
+	color:#6d6a6a;
+}
+
+#reg .loginWrap .operation .other {
+	color: 14px;
 	float: right;
 }
 
-.content .operation .other span {
+#reg .loginWrap .operation .other span {
 	display: inline-block;
-	margin: 0 12px;
+	margin: 0 4px;
+	color: gainsboro;
+}
+
+#loginBtn {
+	width: 100%;
+	height: 42px;
+	line-height: 42px;
+	color: white;
+	background-color: #4381e8;
+	text-align: center;
+	margin-top: 30px;
+	border-radius: 4px;
+}
+
+#loginBtn:hover {
+	cursor: pointer;
 }

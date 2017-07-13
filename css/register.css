@@ -1,183 +1,150 @@
-html,
-body {
+/*注册****************************************/
+
+#register {
 	width: 100%;
 	height: 100%;
 }
 
-.content {
-	width: 400px;
-	padding: 20px;
-	border: 1px solid gainsboro;
-	border-radius: 6px;
-	margin: 120px auto;
-}
-
-@media only screen and (max-width: 500px) {
-	.content {
-		width: 90%;
-		padding: 20px 6px;
-		border: 1px solid gainsboro;
-		border-radius: 6px;
-		margin: 120px auto;
-	}
-}
-
-.content h2 {
-	font-size: 24px;
-	padding-bottom: 20px;
-}
-
-.content h2 a {
-	font-size: 14px;
-	font-weight: normal;
-	padding-bottom: 2px;
-	text-decoration: underline;
-	float: right;
-	margin-top: 16px;
-}
-
-.content p {
-	width: 100%;
-	margin-top: 40px;
-	padding: 4px 0px;
-}
-
-.content .input {
-	border: 1px solid black;
-	border-radius: 4px;
+#register .registerWrap {
+	width: 340px;
+	height: 480px;
+	padding: 0px 20px;
+	background-color: white;
+	margin: 0 auto;
+	border-radius: 8px;
 	position: relative;
 }
 
-.content .input span {
-	display: block;
-	width: 40px;
-	height: 40px;
-	background-color: darkkhaki;
+#closeRegister {
+	font-size: 40px;
+	color: white;
 	position: absolute;
-	top: 5px;
-	left: 10px;
+	right: 0px;
+	top: -50px;
 }
 
-.content .input .show {
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	background-color: white;
-	position: absolute;
-	top: 20px;
-	left: 360px;
-}
-.content .input .show:hover{
+#closeRegister:hover {
 	cursor: pointer;
 }
-.content .input input {
-	width: 310px;
-	margin-left: 60px;
-	font-size: 16px;
-	border: none;
-	padding: 12px 0px;
-	outline: none;
-}
 
-.content .input input:hover {
-	border: none;
-	outline: none;
-}
-
-@media only screen and (max-width: 500px) {
-	.content p {
-		width: 100%;
-		margin: 0 auto;
-		margin-top: 40px;
-	}
-	.content .input span {
-		position: absolute;
-		top: 2px;
-		left: 6px;
-	}
-	.content .input .show {
-		position: absolute;
-		top: 2px;
-		left: 80%;
-	}
-	.content .input input {
-		width: 80%;
-		margin-left: 18%;
-		font-size: 14px;
-		border: none;
-		padding: 12px 0px;
-		outline: none;
-	}
-}
-
-
-/*获取验证码*/
-
-.content .yzm {
-	text-align: center;
-}
-
-.content .yzm input {
-	width: 170px;
-	height: 36px;
-	outline: none;
-	background-color: white;
-	border-radius: 2px;
-	text-align: center;
-}
-
-.content .yzm button {
-	display: inline-block;
-	width: 128px;
-	height: 34px;
-	outline: none;
-	border: none;
-	background-color: gainsboro;
-	text-align: center;
-	line-height: 34px;
-	margin-left: 50px;
-}
-
-@media only screen and (max-width: 500px) {
-	.content .yzm input {
-		width: 120px;
-		height: 36px;
-		outline: none;
-		background-color: white;
-		border-radius: 2px;
-		text-align: center;
-	}
-	.content .yzm span {
-		display: inline-block;
-		width: 100px;
-		height: 34px;
-		font-size: 14px;
-		background-color: gainsboro;
-		text-align: center;
-		line-height: 34px;
-		margin-left: 20px;
-	}
-}
-
-
-/*注册*/
-
-.content .register {
+#register .registerWrap h2 {
 	width: 100%;
-	height: 44px;
+	font-weight: normal;
+	font-size: 28px;
+	padding: 30px 0px;
 	text-align: center;
-	line-height: 44px;
-	background-color: gainsboro;
-	margin-top: 30px;
+	position: relative;
 }
 
-.content .register:hover {
+#register .registerWrap h2 span {
+	display: inline-block;
+	width: 64px;
+	height: 1px;
+	background-color: gainsboro;
+	position: absolute;
+	top: 48px;
+	z-index: 10;
+}
+
+#register .registerWrap h2 span:nth-child(1) {
+	position: absolute;
+	left: 0px;
+}
+
+#register .registerWrap h2 span:nth-child(2) {
+	position: absolute;
+	right: 0px;
+}
+
+#register .registerWrap .inputs {
+	display: block;
+	font-size: 14px;
+	width: 96%;
+	padding: 6px 0px 6px 4%;
+	margin-bottom: 30px;
+}
+
+#register .registerWrap .user {
+	position: relative;
+}
+
+#register .registerWrap .user span {
+	font-size: 16px;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+}
+
+#register .registerWrap .user span:hover {
 	cursor: pointer;
 }
 
-
-/*其他操作*/
-
-.content .operation {
+#register .registerWrap .operation label {
 	font-size: 14px;
+}
+
+#register .registerWrap .operation .other {
+	color: 14px;
+	float: right;
+}
+
+#register .registerWrap .operation .other span {
+	display: inline-block;
+	margin: 0 4px;
+	color: gainsboro;
+}
+
+#register .registerWrap .yzm {
+	width: 100%;
+	height: 40px;
+}
+
+#register .registerWrap .yzm input {
+	display: inline-block;
+	width: 60%;
+	padding: 6px 0px 6px 6px;
+}
+
+#register .registerWrap .yzm button {
+	display: inline-block;
+	width: 30%;
+	font-size: 12px;
+	padding: 6px 0px 6px 0px;
+	float: right;
+}
+
+#registerBtn {
+	width: 100%;
+	height: 42px;
+	line-height: 42px;
+	color: white;
+	background-color: #4381e8;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-radius: 4px;
+}
+
+#registerBtn:hover {
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 420px) {
+	#register .registerWrap .yzm input {
+		width: 40%;
+	}
+	#register .registerWrap .yzm button {
+		display: inline-block;
+		width: 50%;
+		float: right;
+	}
+	#register .registerWrap .operation .other {
+		float: none;
+		color: 14px;
+	}
+	#register .registerWrap .operation .other span {
+		display: inline-block;
+		margin: 0 4px;
+		color: gainsboro;
+	}
 }

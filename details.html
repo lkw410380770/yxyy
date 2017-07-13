@@ -4,39 +4,100 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 		<title>详情</title>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/details.css" />
-		<script src="js/public.js"></script>
 	</head>
 
 	<body>
-			<div class="slide-nav">
-		<div class="height150"></div>
-		<ul>
-			<li><a href="index.html">首页</a></li>
-			<li><a href="aboutUs.html">关于我们</a></li>
-			<li><a href="support.html">教学支持</a></li>
-			<li><a href="study.html">在线学习</a></li>
-			<li><a href="lcEnglish.html">临床英语</a></li>
-			<li><a href="development.html">教师发展</a></li>
-			<li><a href="match.html">英语赛事</a></li>
-			<li><a href="service.html">科研服务</a></li>
-		</ul>
-	</div>
-	<header class="p-head">
-		<img src="" alt="logo">
-		<div class="clickEle"></div>
-		<ul class="navBox">
+		<!--登录-->
+		<div class="" id="login">
+			<div class="loginWrap">
+				<i id="closeLogin" class="iconfont icon-101"></i>
+				<h2><span></span>登录账号<span></span></h2>
+				<div class="user">
+					<input type="text" name="" id="" value="" class="inputs loginCloseUserText" placeholder="手机号/用户名" />
+					<span class="iconfont icon-error_bg closeUser loginCloseUser"></span>
+				</div>
+				<input type="password" name="" id="" value="" class="inputs" placeholder="密码" />
+				<p class="operation"><input type="checkbox" name="" id="" /><label>记住我</label><label class="other"><a href="#">忘记密码</a><span>|</span><a class="REGISTERBTN">注册账户</a></label></p>
+				<div id="loginBtn">登录</div>
+			</div>
+		</div>
+		<!--注册-->
+		<div id="register">
+			<div class="registerWrap">
+				<i id="closeRegister" class="iconfont icon-101"></i>
+				<h2><span></span>账号注册<span></span></h2>
+				<div class="user">
+					<input type="text" name="" id="" value="" class="inputs registerCloseUserText" placeholder="手机号" />
+					<span class="iconfont icon-error_bg closeUser registerCloseUser"></span>
+				</div>
+				<input type="text" name="" id="" value="" class="inputs" placeholder="请输入用户名,最长18个英文或9个汉字" />
+				<div class="user">
+					<input type="password" name="" id="" value="" class="inputs passInput" placeholder="密码,5-20位英文、数字、符号" />
+					<span class="iconfont icon-chakanmima showPass"></span>
+				</div>
+				<p class="yzm"><input type="text" name="" id="" value="" placeholder="输入验证码" /><button id="codeBtn">短信获取验证码</button></p>
+				<div id="registerBtn">立即注册</div>
+				<p class="operation"><input type="checkbox" name="" id="" /><label>我已经阅读并同意<a href="#">《用户协议》</a></label><label class="other">已有账号？<a class="LOGINBTN">请登录</a></label></p>
+			</div>
+		</div>
+		<div class="mask"></div>
+		<div class="slide-nav">
+			<div class="height150"></div>
+			<ul>
 				<li>
 					<a href="index.html">首页</a>
 				</li>
 				<li>
-					<a href="aboutUs.html">关于我们</a>
+					<a href="about.html">关于我们</a>
+				</li>
+				<li>
+					<a href="list_teaching.html">教学支持</a>
+
+				</li>
+				<li>
+					<a href="list_study.html">在线学习</a>
+
+				</li>
+				<li>
+					<a href="list_english.html">临床英语</a>
+
+				</li>
+				<li>
+					<a href="list_development.html">教师发展</a>
+
+				</li>
+				<li>
+					<a href="list_match.html">英语赛事</a>
+
+				</li>
+				<li>
+					<a href="list_service.html">科研服务</a>
+				</li>
+				<li>
+					<a class="LOGINBTN">登录</a>
+					<i style="color: white;">/</i>
+					<a class="REGISTERBTN">注册</a>
+				</li>
+			</ul>
+		</div>
+		<header class="p-head">
+			<img src="img/logo1.png" alt="logo">
+			<div class="clickEle"><span class="iconfont icon-iconsanheng"></span></div>
+			<ul class="navBox">
+				<li>
+					<a href="index.html" class="nav_1">首页</a>
+				</li>
+				<li>
+					<a href="about.html" class="nav_1">关于我们</a>
 				</li>
 				<li class="jxzc">
-					<a href="support.html">教学支持</a>
+					<a href="list_teaching.html" class="nav_1">教学支持</a>
 					<div class="showNav jxzcM">
 						<a href="">教考大纲</a>
 						<a href="">课程设置</a>
@@ -46,7 +107,7 @@
 					</div>
 				</li>
 				<li class="zxxx">
-					<a href="study.html">在线学习</a>
+					<a href="list_study.html" class="nav_1">在线学习</a>
 					<div class="showNav zxxxM">
 						<a href="">METS备考</a>
 						<a href="">进修英语</a>
@@ -55,7 +116,7 @@
 					</div>
 				</li>
 				<li class="lcyy">
-					<a href="lcEnglish.html">临床英语</a>
+					<a href="list_english.html" class="nav_1">临床英语</a>
 					<div class="showNav lcyyM">
 						<a href="">诊疗英语</a>
 						<a href="">病历撰写</a>
@@ -66,7 +127,7 @@
 					</div>
 				</li>
 				<li class="jsfz">
-					<a href="development.html">教师发展</a>
+					<a href="list_development.html" class="nav_1">教师发展</a>
 					<div class="showNav jsfzM">
 						<a href="">师培信息</a>
 						<a href="">书刊推介</a>
@@ -74,7 +135,7 @@
 					</div>
 				</li>
 				<li class="yyss">
-					<a href="match.html">英语赛事</a>
+					<a href="list_match.html" class="nav_1">英语赛事</a>
 					<div class="showNav yyssM">
 						<a href="">赛事信息</a>
 						<a href="">赛事集锦</a>
@@ -83,7 +144,7 @@
 					</div>
 				</li>
 				<li class="kyfw">
-					<a href="service.html">科研服务</a>
+					<a href="list_service.html" class="nav_1">科研服务</a>
 					<div class="showNav kyfwM">
 						<a href="">院校来稿</a>
 						<a href="">论文推荐</a>
@@ -93,21 +154,27 @@
 					</div>
 				</li>
 			</ul>
-		<div class="serBox">
-			<ul class="login">
-			<li><a href="login.html">登录</a></li>
-			<i>/</i>
-			<li><a href="register.html">注册</a></li>
-		</ul>
-		<form action="">
-			<i>⊙</i>
-			<label for=""></label>
-			<input type="text">
-			
-		</form>
-		</div>
-	</header>
-
+			<!--搜索框-->
+			<div class="searchWrap">
+				<i class="iconfont icon-sousuo" id="searchDj"></i>
+				<input type="text" name="" id="search" value="" class="search" placeholder="输入搜索内容" />
+				<span class="iconfont icon-X" id="closeBtn"></span>
+			</div>
+			<div class="serBox">
+				<ul class="login">
+					<li>
+						<span class="iconfont icon-sousuo" id="searchBtn"></span>
+					</li>
+					<li>
+						<a class="LOGINBTN">登录</a>
+					</li>
+					<i>/</i>
+					<li>
+						<a class="REGISTERBTN">注册</a>
+					</li>
+				</ul>
+			</div>
+		</header>
 		<!--内容部分-->
 		<div class="content">
 			<!--小导航栏-->
@@ -126,22 +193,20 @@
 						<!--时间和分享-->
 						<div class="wrap">
 							<div class="time">
-								<span></span>
+								<span class="iconfont icon-shijian"></span>
 								<label>2017.05.30</label>
 							</div>
 							<div class="number">
-								<span></span>
+								<span class="iconfont icon-xiaoxi" style="font-size: 16px;"></span>
 								<label>9999+</label>
 							</div>
-							<div class="share">
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
+							<div class="bdsharebuttonbox share">
+								<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+								<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+								<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+								<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+								<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+								<a href="#" class="bds_more" data-cmd="more"></a>
 							</div>
 						</div>
 						<hr />
@@ -165,19 +230,17 @@
 				</div>
 				<!--点赞-->
 				<div class="fabulous">
-					<span></span>
+					<span class="iconfont icon-zan"></span>
 					<p>999</p>
 				</div>
 				<!--文章结束后的分享-->
-				<div class="downShare">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
+				<div class="bdsharebuttonbox downShare" style="text-align: center;">
+					<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+					<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+					<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+					<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+					<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+					<a href="#" class="bds_more" data-cmd="more"></a>
 				</div>
 				<!--评论部分-->
 				<div class="evaluateTitle">
@@ -213,26 +276,26 @@
 							<p>Praesent suscipit consequat neque, eu maximus nunc cursus sed. Duis sollicitudin massa in diam molestie accumsan. Ut ullamcorper hendrerit euismod. Aenean et varius purus.</p>
 						</li>
 						<li class="pagination">
-								<span class="pre_page stylyTab">
+							<span class="pre_page stylyTab">
 									<a class="pre_page">上一页</a>
 								</span>
-								<span>
+							<span>
 									<a class="current">1</a>
 								</span>
-								<span>
+							<span>
 									<a href="">2</a>
 								</span>
-								<span>
+							<span>
 									<a href="">3</a>
 								</span>
-								<span>
+							<span>
 									<a href="">4</a>
 								</span>
-								<span>
+							<span>
 									<a class="next_page" href="">下一页</a>
 								</span>
-							</ul>
-						</li>
+					</ul>
+					</li>
 					</ul>
 				</div>
 			</div>
@@ -244,7 +307,7 @@
 					<ul>
 						<li>
 							<div class="showImg">
-								
+
 							</div>
 							<div class="text">
 								<span>2017.05.30</span>
@@ -253,7 +316,7 @@
 						</li>
 						<li>
 							<div class="showImg">
-								
+
 							</div>
 							<div class="text">
 								<span>2017.05.30</span>
@@ -262,7 +325,7 @@
 						</li>
 						<li>
 							<div class="showImg">
-								
+
 							</div>
 							<div class="text">
 								<span>2017.05.30</span>
@@ -271,7 +334,7 @@
 						</li>
 						<li>
 							<div class="showImg">
-								
+
 							</div>
 							<div class="text">
 								<span>2017.05.30</span>
@@ -280,7 +343,7 @@
 						</li>
 						<li>
 							<div class="showImg">
-								
+
 							</div>
 							<div class="text">
 								<span>2017.05.30</span>
@@ -289,7 +352,7 @@
 						</li>
 						<li>
 							<div class="showImg">
-								
+
 							</div>
 							<div class="text">
 								<span>2017.05.30</span>
@@ -302,45 +365,67 @@
 		</div>
 		<!--内容部分结束-->
 		<div class="clear"></div>
-	<footer>
-		<div class="link">
-			<div class="height50"></div>
-			<img src="" alt="logo">
-			<div class="link-info width1">
-				<h5>网站导航</h5>
-				<ul>
-					<li><a href="aboutUs.html">关于我们</a></li>
-					<li><a href="support.html">教学支持</a></li>
-					<li><a href="study.html">在线学习</a></li>
-					<li><a href="service.html">科研服务</a></li>
-					<li><a href="lcEnglish.html">临床英语</a></li>
-					<li><a href="development.html">教师发展</a></li>
-					<li><a href="match.html">英语赛事</a></li>
-				</ul>
-			</div>
-			<div class="link-info width2">
-				<h5>友情链接</h5>
-				<ul>
-					<li><a>南京医科大学</a></li>
-					<li><a>医护英语水平考试</a></li>
-					<li><a>搜题</a></li>
-					<li><a>可可英语网</a></li>
-					<li><a>搜狐外语</a></li>
-					<li><a>初中英语</a></li>
-					<li><a>学前英语</a></li>
-					<li><a>南京人事考试网</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="banquan">
-            <b>Copyright © 2003-2017 inspinovation  ICP备8888888号</b>
-            <ul>
-                <li><a>图标</a></li>
-                <li><a>图标</a></li>
-                <li><a>图标</a></li>
-            </ul>
-        </div>
-	</footer>
-	</body>
+		<footer>
+			<div class="link">
+				<div class="height50"></div>
+				<img src="img/logo2.png" alt="logo">
+				<div class="link-info width1">
+					<h5>网站导航</h5>
+					<ul>
+						<li>
+							<a href="about.html">关于我们</a>
+						</li>
+						<li>
+							<a href="list_teaching.html">教学支持</a>
+						</li>
+						<li>
+							<a href="list_study.html">在线学习</a>
+						</li>
+						<li>
+							<a href="list_service.html">科研服务</a>
+						</li>
+						<li>
+							<a href="list_english.html">临床英语</a>
+						</li>
+						<li>
+							<a href="list_development.html">教师发展</a>
+						</li>
+						<li>
+							<a href="list_match.html">英语赛事</a>
+						</li>
+						<li>
+							<a href="about.html">联系我们</a>
+						</li>
+					</ul>
+				</div>
+				<div class="link-info width2">
+					<select name="" class="select">
+						<option value="">南京医科大学</option>
+						<option value="">医护英语水平考试</option>
+						<option value="">搜题</option>
+						<option value="">可可英语网</option>
+						<option value="">搜狐外语</option>
+						<option value="">初中英语</option>
+						<option value="">学前英语</option>
+						<option value="">南京人事考试网</option>
+					</select>
+					<p>
+						<a class="qq" href="http://connect.qq.com/widget/shareqq/index.html?url="><span class="iconfont icon-qq1"></span></a>
+						<a class="wb" href="http://www.jiathis.com/send/?webid=tsina&url="><span class="iconfont icon-weibo"></span></a>
+						<a class="wx" href="http://www.jiathis.com/send/?webid=weixin&url="><span class="iconfont icon-weixin"></span></a>
+					</p>
 
+					</ul>
+				</div>
+			</div>
+			<div class="banquan">
+				<p>Copyright © 2003-2017 inspinovation<span></span>ICP备8888888号<span></span>技术支持：因思维新</p>
+			</div>
+		</footer>
+
+	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/details.js" type="text/javascript" charset="utf-8"></script>
 </html>

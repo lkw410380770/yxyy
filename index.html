@@ -7,24 +7,13 @@
 		<meta name="renderer" content="webkit">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
 		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="layer/mobile/need/layer.css" /> -->
+		<link rel="stylesheet" href="layui/css/layui.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<script src="js/public.js"></script>
-		<style type="text/css">
-			.swiper-pagination span{
-				display: inline-block;
-				width: 30px;
-				height: 10px;
-				border-radius: 10px;
-			}
-			.swiper-pagination-bullet-active{
-				display: inline-block;
-				width: 50px !important;
-				height: 10px;
-				background-color: red;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
 	</head>
 
 	<body>
@@ -36,46 +25,50 @@
 					<a href="index.html">首页</a>
 				</li>
 				<li>
-					<a href="aboutUs.html">关于我们</a>
+					<a href="about.html">关于我们</a>
 				</li>
 				<li>
-					<a href="support.html">教学支持</a>
-					
+					<a href="list_teaching.html">教学支持</a>
+
 				</li>
 				<li>
-					<a href="study.html">在线学习</a>
-					
+					<a href="list_study.html">在线学习</a>
+
 				</li>
 				<li>
-					<a href="lcEnglish.html">临床英语</a>
-					
+					<a href="list_english.html">临床英语</a>
+
 				</li>
 				<li>
-					<a href="development.html">教师发展</a>
-					
+					<a href="list_development.html">教师发展</a>
+
 				</li>
 				<li>
-					<a href="match.html">英语赛事</a>
-					
+					<a href="list_match.html">英语赛事</a>
+
 				</li>
 				<li>
-					<a href="service.html">科研服务</a>
-					
+					<a href="list_service.html">科研服务</a>
+				</li>
+				<li>
+					<a class="LOGINBTN">登录</a>
+					<i style="color: white;">/</i>
+					<a class="REGISTERBTN">注册</a>
 				</li>
 			</ul>
 		</div>
 		<header class="p-head">
-			<img src="" alt="logo">
-			<div class="clickEle"></div>
+			<img src="img/logo1.png" alt="logo">
+			<div class="clickEle"><span class="iconfont icon-iconsanheng"></span></div>
 			<ul class="navBox">
-				<li>
-					<a href="index.html">首页</a>
+				<li style="background-color: #4673d8;">
+					<a href="index.html" class="nav_1" style="color: white;">首页</a>
 				</li>
 				<li>
-					<a href="aboutUs.html">关于我们</a>
+					<a href="about.html" class="nav_1">关于我们</a>
 				</li>
 				<li class="jxzc">
-					<a href="support.html">教学支持</a>
+					<a href="list_teaching.html" class="nav_1">教学支持</a>
 					<div class="showNav jxzcM">
 						<a href="">教考大纲</a>
 						<a href="">课程设置</a>
@@ -85,7 +78,7 @@
 					</div>
 				</li>
 				<li class="zxxx">
-					<a href="study.html">在线学习</a>
+					<a href="list_study.html" class="nav_1">在线学习</a>
 					<div class="showNav zxxxM">
 						<a href="">METS备考</a>
 						<a href="">进修英语</a>
@@ -94,7 +87,7 @@
 					</div>
 				</li>
 				<li class="lcyy">
-					<a href="lcEnglish.html">临床英语</a>
+					<a href="list_english.html" class="nav_1">临床英语</a>
 					<div class="showNav lcyyM">
 						<a href="">诊疗英语</a>
 						<a href="">病历撰写</a>
@@ -105,7 +98,7 @@
 					</div>
 				</li>
 				<li class="jsfz">
-					<a href="development.html">教师发展</a>
+					<a href="list_development.html" class="nav_1">教师发展</a>
 					<div class="showNav jsfzM">
 						<a href="">师培信息</a>
 						<a href="">书刊推介</a>
@@ -113,7 +106,7 @@
 					</div>
 				</li>
 				<li class="yyss">
-					<a href="match.html">英语赛事</a>
+					<a href="list_match.html" class="nav_1">英语赛事</a>
 					<div class="showNav yyssM">
 						<a href="">赛事信息</a>
 						<a href="">赛事集锦</a>
@@ -122,7 +115,7 @@
 					</div>
 				</li>
 				<li class="kyfw">
-					<a href="service.html">科研服务</a>
+					<a href="list_service.html" class="nav_1">科研服务</a>
 					<div class="showNav kyfwM">
 						<a href="">院校来稿</a>
 						<a href="">论文推荐</a>
@@ -132,22 +125,25 @@
 					</div>
 				</li>
 			</ul>
+			<!--搜索框-->
+			<div class="searchWrap">
+				<i class="iconfont icon-sousuo" id="searchDj"></i>
+				<input type="text" name="" id="search" value="" class="search" placeholder="输入搜索内容" />
+				<span class="iconfont icon-X" id="closeBtn"></span>
+			</div>
 			<div class="serBox">
 				<ul class="login">
 					<li>
-						<a href="login.html">登录</a>
+						<span class="iconfont icon-sousuo" id="searchBtn"></span>
+					</li>
+					<li>
+						<a class="LOGINBTN">登录</a>
 					</li>
 					<i>/</i>
 					<li>
-						<a href="register.html">注册</a>
+						<a class="REGISTERBTN">注册</a>
 					</li>
 				</ul>
-				<form action="">
-					<i>⊙</i>
-					<label for=""></label>
-					<input type="text">
-
-				</form>
 			</div>
 		</header>
 		<!--内容部分开始-->
@@ -155,137 +151,192 @@
 			<!--banner-->
 			<div class="swiper-container banner">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">banner1</div>
-					<div class="swiper-slide">banner2</div>
-					<div class="swiper-slide">banner3</div>
+					<div class="swiper-slide banner1">
+						<div class="text">
+							<h2>医学英语教育网</h2>
+							<h5>全国性的专业外语教学与应用研究</h5>
+							<hr size="3" color="white" style="width: 116px;" />
+							<p>服务国家专业外语教育改革与发展。建立具有我国特色的专业外语教育、教学体系，提高专业外语教育教学水平。为全国METS考点院校搭建师资培养、学术交流、考试研究、教学评估、科研服务的综合平台。</p>
+							<h6>MEDICAL ENGLISH EDUCATION</h6>
+							<div class="moreBtn">了解更多</div>
+						</div>
+					</div>
+					<div class="swiper-slide banner1">
+						<div class="text">
+							<h2>医学英语教育网</h2>
+							<h5>全国性的专业外语教学与应用研究</h5>
+							<hr size="3" color="white" style="width: 116px;" />
+							<p>服务国家专业外语教育改革与发展。建立具有我国特色的专业外语教育、教学体系，提高专业外语教育教学水平。为全国METS考点院校搭建师资培养、学术交流、考试研究、教学评估、科研服务的综合平台。</p>
+							<h6>MEDICAL ENGLISH EDUCATION</h6>
+							<div class="moreBtn">了解更多</div>
+						</div>
+					</div>
+					<div class="swiper-slide banner1">
+						<div class="text">
+							<h2>医学英语教育网</h2>
+							<h5>全国性的专业外语教学与应用研究</h5>
+							<hr size="3" color="white" style="width: 116px;" />
+							<p>服务国家专业外语教育改革与发展。建立具有我国特色的专业外语教育、教学体系，提高专业外语教育教学水平。为全国METS考点院校搭建师资培养、学术交流、考试研究、教学评估、科研服务的综合平台。</p>
+							<h6>MEDICAL ENGLISH EDUCATION</h6>
+							<div class="moreBtn">了解更多</div>
+						</div>
+					</div>
 				</div>
 				<!-- Add Pagination -->
-				<div class="swiper-pagination" style="left: 45%;"></div>
-				<!-- Add Navigation -->
-				<div class="swiper-button-prev swiper-button-white"></div>
-				<div class="swiper-button-next swiper-button-white"></div>
+				<div class="swiper-pagination" style="left: 27%;bottom: 154px;"></div>
 			</div>
 			<!--图片或视频介绍部分-->
-			<div class="introduce">
-				<!--图片或者视频-->
-				<div class="wrap">
-
-				</div>
-				<div class="text">
-					<h2>医学英语教育网</h2>
-					<p>医学英语教育网是医护英语水平考试办公室和高等教育出版社共同建设的全国医学英语教、学、考、研一体化综合服务平台。主要服务于 METS各层次考点院校及其它医学院校。</p>
-					<div class="moreBtn">了解更多</div>
+			<div class="wrapBj">
+				<div class="introduce">
+					<!--图片或者视频-->
+					<div class="wrap">
+						<img src="img/index_top.png" />
+					</div>
+					<div class="text">
+						<h2>医学英语教育网</h2>
+						<h4>MEDICAL ENGLISH EDUCATION</h4>
+						<p>医学英语教育网是医护英语水平考试办公室和高等教育出版社共同建设的全国医学英语教、学、考、研一体化综合服务平台。主要服务于 METS各层次考点院校及其它医学院校。</p>
+						<div class="moreBtn">了解更多</div>
+						<div class="moreBtn eg">METS考试报名</div>
+					</div>
 				</div>
 			</div>
 			<!--资讯部分-->
 			<div class="information">
 				<!--教学支持-->
 				<div class="modular">
-					<h2 class="title"><span></span>教学支持</h2>
-					<hr />
-					<div class="showImg">
-
-					</div>
-					<div class="text">
-						<div class="textImg">
-
+					<div class="title" style="background-color: #f8514d;"><span><img src="img/teachingIcon1.png"/></span>
+						<h2>教学支持</h2><label>TEACHING SUPPORT</label></div>
+					<a>
+						<div class="showImg">
+							<img class="zxMaxImg" src="img/index_jx_03.png" />
+							<h6>资讯标题，最多两行显示，不可超过一行...</h6>
 						</div>
-						<div class="wb">
-							<h2>资讯标题，最多两行显示，不可超过两行</h2>
-							<p>Vestibulum sed lacus nec justo porta rhoncus non quis dui. Suspendisse id iaculis dui. Vestibulum at accumsan odio.</p>
+					</a>
+					<a>
+						<div class="text">
+							<div class="textImg">
+								<img class="imgText" src="img/index_jx_12.png" />
+							</div>
+							<div class="wb">
+								<h2>资讯标题，最多两行显示，不可超过两行,最后用省略号...</h2>
+								<p>2017.05.30</p>
+							</div>
 						</div>
-					</div>
-					<div class="text">
-						<div class="textImg">
-
+					</a>
+					<a>
+						<div class="text">
+							<div class="textImg">
+								<img class="imgText" src="img/index_jx_24.png" />
+							</div>
+							<div class="wb">
+								<h2>资讯标题，最多两行显示，不可超过两行,最后用省略号...</h2>
+								<p>2017.05.30</p>
+							</div>
 						</div>
-						<div class="wb">
-							<h2>资讯标题，最多两行显示，不可超过两行</h2>
-							<p>Vestibulum sed lacus nec justo porta rhoncus non quis dui. Suspendisse id iaculis dui. Vestibulum at accumsan odio.</p>
+					</a>
+					<a>
+						<div class="text">
+							<div class="textImg">
+								<img class="imgText" src="img/index_jx_31.png" />
+							</div>
+							<div class="wb">
+								<h2>资讯标题，最多两行显示，不可超过两行,最后用省略号...</h2>
+								<p>2017.05.30</p>
+							</div>
 						</div>
-					</div>
-					<div class="text">
-						<div class="textImg">
-
-						</div>
-						<div class="wb">
-							<h2>资讯标题，最多两行显示，不可超过两行</h2>
-							<p>Vestibulum sed lacus nec justo porta rhoncus non quis dui. Suspendisse id iaculis dui. Vestibulum at accumsan odio.</p>
-						</div>
-					</div>
-					<div class="moreBtn">了解更多</div>
+					</a>
+					<div class="moreBtns">了解更多<span>+</span></div>
 				</div>
 				<!--在线学习-->
 				<div class="modular">
-					<h2 class="title"><span></span>在线学习</h2>
-					<hr />
-					<div class="showImg">
-
-					</div>
-					<div class="text">
-						<div class="textImg">
-
+					<div class="title" style="background-color: #ffbc2e;"><span><img src="img/teachingIcon2.png"/></span>
+						<h2>在线学习</h2><label>ONLINE LEARNING</label></div>
+					<a>
+						<div class="showImg">
+							<img class="zxMaxImg" src="img/index_jx_05.png" />
+							<h6>资讯标题，最多两行显示，不可超过一行...</h6>
 						</div>
-						<div class="wb">
-							<h2>资讯标题，最多两行显示，不可超过两行</h2>
-							<p>Vestibulum sed lacus nec justo porta rhoncus non quis dui. Suspendisse id iaculis dui. Vestibulum at accumsan odio.</p>
+					</a>
+					<a>
+						<div class="text">
+							<div class="textImg">
+								<img class="imgText" src="img/index_jx_15.png" />
+							</div>
+							<div class="wb">
+								<h2>资讯标题，最多两行显示，不可超过两行,最后用省略号...</h2>
+								<p>2017.05.30</p>
+							</div>
 						</div>
-					</div>
-					<div class="text">
-						<div class="textImg">
-
+					</a>
+					<a>
+						<div class="text">
+							<div class="textImg">
+								<img class="imgText" src="img/index_jx_26.png" />
+							</div>
+							<div class="wb">
+								<h2>资讯标题，最多两行显示，不可超过两行,最后用省略号...</h2>
+								<p>2017.05.30</p>
+							</div>
 						</div>
-						<div class="wb">
-							<h2>资讯标题，最多两行显示，不可超过两行</h2>
-							<p>Vestibulum sed lacus nec justo porta rhoncus non quis dui. Suspendisse id iaculis dui. Vestibulum at accumsan odio.</p>
+					</a>
+					<a>
+						<div class="text">
+							<div class="textImg">
+								<img class="imgText" src="img/index_jx_33.png" />
+							</div>
+							<div class="wb">
+								<h2>资讯标题，最多两行显示，不可超过两行,最后用省略号...</h2>
+								<p>2017.05.30</p>
+							</div>
 						</div>
-					</div>
-					<div class="text">
-						<div class="textImg">
-
-						</div>
-						<div class="wb">
-							<h2>资讯标题，最多两行显示，不可超过两行</h2>
-							<p>Vestibulum sed lacus nec justo porta rhoncus non quis dui. Suspendisse id iaculis dui. Vestibulum at accumsan odio.</p>
-						</div>
-					</div>
-					<div class="moreBtn">了解更多</div>
+					</a>
+					<div class="moreBtns">了解更多<span>+</span></div>
 				</div>
 				<!--临床英语-->
 				<div class="modular">
-					<h2 class="title"><span></span>临床英语</h2>
-					<hr />
-					<div class="showImg">
-
-					</div>
-					<div class="text">
-						<div class="textImg">
-
+					<div class="title" style="background-color: #64cf66;"><span><img src="img/teachingIcon3.png"/></span>
+						<h2>临床英语</h2><label>CLINICAL ENGLISH</label></div>
+					<a>
+						<div class="showImg">
+							<img class="zxMaxImg" src="img/index_jx_07.png" />
+							<h6>资讯标题，最多两行显示，不可超过一行...</h6>
 						</div>
-						<div class="wb">
-							<h2>资讯标题，最多两行显示，不可超过两行</h2>
-							<p>Vestibulum sed lacus nec justo porta rhoncus non quis dui. Suspendisse id iaculis dui. Vestibulum at accumsan odio.</p>
+					</a>
+					<a>
+						<div class="text">
+							<div class="textImg">
+								<img class="imgText" src="img/index_jx_18.png" />
+							</div>
+							<div class="wb">
+								<h2>资讯标题，最多两行显示，不可超过两行,最后用省略号...</h2>
+								<p>2017.05.30</p>
+							</div>
 						</div>
-					</div>
-					<div class="text">
-						<div class="textImg">
-
+					</a>
+					<a>
+						<div class="text">
+							<div class="textImg">
+								<img class="imgText" src="img/index_jx_23.png" />
+							</div>
+							<div class="wb">
+								<h2>资讯标题，最多两行显示，不可超过两行,最后用省略号...</h2>
+								<p>2017.05.30</p>
+							</div>
 						</div>
-						<div class="wb">
-							<h2>资讯标题，最多两行显示，不可超过两行</h2>
-							<p>Vestibulum sed lacus nec justo porta rhoncus non quis dui. Suspendisse id iaculis dui. Vestibulum at accumsan odio.</p>
+					</a>
+					<a>
+						<div class="text">
+							<div class="textImg">
+								<img class="imgText" src="img/index_jx_35.png" />
+							</div>
+							<div class="wb">
+								<h2>资讯标题，最多两行显示，不可超过两行,最后用省略号...</h2>
+								<p>2017.05.30</p>
+							</div>
 						</div>
-					</div>
-					<div class="text">
-						<div class="textImg">
-
-						</div>
-						<div class="wb">
-							<h2>资讯标题，最多两行显示，不可超过两行</h2>
-							<p>Vestibulum sed lacus nec justo porta rhoncus non quis dui. Suspendisse id iaculis dui. Vestibulum at accumsan odio.</p>
-						</div>
-					</div>
-					<div class="moreBtn">了解更多</div>
+					</a>
+					<div class="moreBtns">了解更多<span>+</span></div>
 				</div>
 				<!---->
 			</div>
@@ -296,91 +347,207 @@
 				<div class="moduleWrap">
 					<!--师培信息-->
 					<div class="module">
-						<div class="showImg">
-
-						</div>
-						<div class="text">
-							<h3>师培信息</h3>
-							<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
-						</div>
+						<a>
+							<div class="showImg">
+								<img class="jsfzImg" src="img/index_jsfz_03.png" />
+							</div>
+							<div class="text">
+								<label class="tP">+</label>
+								<h3>师培信息</h3>
+								<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
+							</div>
+						</a>
 					</div>
 					<!--书刊推介-->
 					<div class="module">
-						<div class="showImg">
-
-						</div>
-						<div class="text">
-							<h3>书刊推介</h3>
-							<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
-						</div>
+						<a>
+							<div class="showImg">
+								<img class="jsfzImg" src="img/index_jsfz_05.png" />
+							</div>
+							<div class="text">
+								<label class="tP">+</label>
+								<h3>书刊推介</h3>
+								<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
+							</div>
+						</a>
 					</div>
 					<!--专家讲座-->
 					<div class="module">
-						<div class="showImg">
-
-						</div>
-						<div class="text">
-							<h3>专家讲座</h3>
-							<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
-						</div>
+						<a>
+							<div class="showImg">
+								<img class="jsfzImg" src="img/index_jsfz_07.png" />
+							</div>
+							<div class="text">
+								<label class="tP">+</label>
+								<h3>专家讲座</h3>
+								<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
 			<!--英语赛事-->
 			<div class="match">
+				<h6><img src="img/zt1.png"/></h6>
 				<h2>英语赛事</h2>
 				<h5>针对英语赛事持版块做简单的介绍，文字信息长度不可超过两行</h5>
-				<div class="moduleWrap">
-					<!--赛事1-->
-					<div class="module">
-						<div class="showImg">
+				<div class="swiper-container yyss">
+					<div class="swiper-wrapper moduleWrap">
+						<div class="swiper-slide">
+							<!--赛事1-->
+							<a>
+								<div class="module">
+									<div class="showImg">
+										<img class="yyssImg" src="img/yyss_13.png" />
+									</div>
+									<div class="text">
+										<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+										<p>2017.05.30</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<!--赛事2-->
+							<a>
+								<div class="module">
+									<div class="showImg">
+										<img class="yyssImg" src="img/yyss_15.png" />
+									</div>
+									<div class="text">
+										<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+										<p>2017.05.30</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<!--赛事3-->
+							<a>
+								<div class="module">
+									<div class="showImg">
+										<img class="yyssImg" src="img/yyss_17.png" />
+									</div>
+									<div class="text">
+										<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+										<p>2017.05.30</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<!--赛事4-->
+							<a>
+								<div class="module">
+									<div class="showImg">
+										<img class="yyssImg" src="img/yyss_19.png" />
+									</div>
+									<div class="text">
+										<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+										<p>2017.05.30</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<!--赛事5-->
+							<a>
+								<div class="module">
+									<div class="showImg">
+										<img class="yyssImg" src="img/yyss_21.png" />
+									</div>
+									<div class="text">
+										<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+										<p>2017.05.30</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<!--赛事1-->
+							<a>
+								<div class="module">
+									<div class="showImg">
+										<img class="yyssImg" src="img/yyss_13.png" />
+									</div>
+									<div class="text">
+										<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+										<p>2017.05.30</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<!--赛事2-->
+							<a>
+								<div class="module">
+									<div class="showImg">
+										<img class="yyssImg" src="img/yyss_15.png" />
+									</div>
+									<div class="text">
+										<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+										<p>2017.05.30</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<!--赛事3-->
+							<a>
+								<div class="module">
+									<div class="showImg">
+										<img class="yyssImg" src="img/yyss_17.png" />
+									</div>
+									<div class="text">
+										<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+										<p>2017.05.30</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<!--赛事4-->
+							<a>
+								<div class="module">
+									<div class="showImg">
+										<img class="yyssImg" src="img/yyss_19.png" />
+									</div>
+									<div class="text">
+										<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+										<p>2017.05.30</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<!--赛事5-->
+							<a>
+								<div class="module">
+									<div class="showImg">
+										<img class="yyssImg" src="img/yyss_21.png" />
+									</div>
+									<div class="text">
+										<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+										<p>2017.05.30</p>
+									</div>
+								</div>
+							</a>
+						</div>
 
-						</div>
-						<div class="text">
-							<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
-							<p>2017.05.30</p>
-						</div>
 					</div>
-					<!--赛事2-->
-					<div class="module">
-						<div class="showImg">
-
-						</div>
-						<div class="text">
-							<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
-							<p>2017.05.30</p>
-						</div>
-					</div>
-					<!--赛事3-->
-					<div class="module">
-						<div class="showImg">
-
-						</div>
-						<div class="text">
-							<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
-							<p>2017.05.30</p>
-						</div>
-					</div>
-					<!--赛事4-->
-					<div class="module">
-						<div class="showImg">
-
-						</div>
-						<div class="text">
-							<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
-							<p>2017.05.30</p>
-						</div>
-					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
 				</div>
 				<div class="moreBtn">了解更多</div>
 			</div>
 			<!--科研服务-->
 			<div class="service">
+				<h6><img src="img/zt2.png"/></h6>
 				<h2>科研服务</h2>
 				<h5>针对科研服务持版块做简单的介绍，文字信息长度不可超过两行</h5>
 				<ul>
 					<li>
-						<a href="" style="color: black;font-weight: bold;">院校来稿</a>
+						<a href="">院校来稿</a>
 					</li>
 					<li>
 						<a href="">论文推荐</a>
@@ -397,49 +564,57 @@
 				</ul>
 				<div class="moduleWrap">
 					<!--服务模块1-->
-					<div class="module">
-						<div class="showImg">
-
+					<a>
+						<div class="module">
+							<div class="showImg">
+								<img class="kyImg" src="img/index_ky_03.png" />
+							</div>
+							<div class="text">
+								<span><i class="iconfont icon-shijian"></i>2017.05.30</span>
+								<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+								<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
+							</div>
 						</div>
-						<div class="text">
-							<span>2017.05.30</span>
-							<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
-							<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
-						</div>
-					</div>
+					</a>
 					<!--服务模块2-->
-					<div class="module">
-						<div class="showImg">
-
+					<a>
+						<div class="module">
+							<div class="showImg">
+								<img class="kyImg" src="img/index_ky_09.png" />
+							</div>
+							<div class="text">
+								<span><i class="iconfont icon-shijian"></i>2017.05.30</span>
+								<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+								<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
+							</div>
 						</div>
-						<div class="text">
-							<span>2017.05.30</span>
-							<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
-							<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
-						</div>
-					</div>
+					</a>
 					<!--服务模块3-->
-					<div class="module">
-						<div class="showImg">
-
+					<a>
+						<div class="module">
+							<div class="showImg">
+								<img class="kyImg" src="img/index_ky_05.png" />
+							</div>
+							<div class="text">
+								<span><i class="iconfont icon-shijian"></i>2017.05.30</span>
+								<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+								<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
+							</div>
 						</div>
-						<div class="text">
-							<span>2017.05.30</span>
-							<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
-							<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
-						</div>
-					</div>
+					</a>
 					<!--服务模块4-->
-					<div class="module">
-						<div class="showImg">
-
+					<a>
+						<div class="module">
+							<div class="showImg">
+								<img class="kyImg" src="img/index_ky_11.png" />
+							</div>
+							<div class="text">
+								<span><i class="iconfont icon-shijian"></i>2017.05.30</span>
+								<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
+								<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
+							</div>
 						</div>
-						<div class="text">
-							<span>2017.05.30</span>
-							<h3>赛事标题，最多两行显示，不可超过两行，标题最后用省略号显示...</h3>
-							<p>Nunc a sagittis elit, eget vehicula ligula. Etiam consequat tristique metus, maximus condimentum tellus varius nec.</p>
-						</div>
-					</div>
+					</a>
 				</div>
 				<div class="moreBtn">了解更多</div>
 			</div>
@@ -449,91 +624,67 @@
 		<footer>
 			<div class="link">
 				<div class="height50"></div>
-				<img src="" alt="logo">
+				<img src="img/logo2.png" alt="logo">
 				<div class="link-info width1">
 					<h5>网站导航</h5>
 					<ul>
 						<li>
-							<a href="aboutUs.html">关于我们</a>
+							<a href="about.html">关于我们</a>
 						</li>
 						<li>
-							<a href="support.html">教学支持</a>
+							<a href="list_teaching.html">教学支持</a>
 						</li>
 						<li>
-							<a href="study.html">在线学习</a>
+							<a href="list_study.html">在线学习</a>
 						</li>
 						<li>
-							<a href="service.html">科研服务</a>
+							<a href="list_service.html">科研服务</a>
 						</li>
 						<li>
-							<a href="lcEnglish.html">临床英语</a>
+							<a href="list_english.html">临床英语</a>
 						</li>
 						<li>
-							<a href="development.html">教师发展</a>
+							<a href="list_development.html">教师发展</a>
 						</li>
 						<li>
-							<a href="match.html">英语赛事</a>
+							<a href="list_match.html">英语赛事</a>
+						</li>
+						<li>
+							<a href="about.html">联系我们</a>
 						</li>
 					</ul>
 				</div>
 				<div class="link-info width2">
-					<h5>友情链接</h5>
-					<ul>
-						<li>
-							<a>南京医科大学</a>
-						</li>
-						<li>
-							<a>医护英语水平考试</a>
-						</li>
-						<li>
-							<a>搜题</a>
-						</li>
-						<li>
-							<a>可可英语网</a>
-						</li>
-						<li>
-							<a>搜狐外语</a>
-						</li>
-						<li>
-							<a>初中英语</a>
-						</li>
-						<li>
-							<a>学前英语</a>
-						</li>
-						<li>
-							<a>南京人事考试网</a>
-						</li>
+					<select name="" class="select">
+						<option value="">南京医科大学</option>
+						<option value="">医护英语水平考试</option>
+						<option value="">搜题</option>
+						<option value="">可可英语网</option>
+						<option value="">搜狐外语</option>
+						<option value="">初中英语</option>
+						<option value="">学前英语</option>
+						<option value="">南京人事考试网</option>
+					</select>
+					<p>
+						<a class="qq" href="http://connect.qq.com/widget/shareqq/index.html?url="><span class="iconfont icon-qq1"></span></a>
+						<a class="wb" href="http://www.jiathis.com/send/?webid=tsina&url="><span class="iconfont icon-weibo"></span></a>
+						<a class="wx" href="http://www.jiathis.com/send/?webid=weixin&url="><span class="iconfont icon-weixin"></span></a>
+					</p>
+
 					</ul>
 				</div>
 			</div>
 			<div class="banquan">
-				<b>Copyright © 2003-2017 inspinovation  ICP备8888888号</b>
-				<ul>
-					<li>
-						<a>图标</a>
-					</li>
-					<li>
-						<a>图标</a>
-					</li>
-					<li>
-						<a>图标</a>
-					</li>
-				</ul>
+				<p>Copyright © 2003-2017 inspinovation<span></span>ICP备8888888号<span></span>技术支持：因思维新</p>
 			</div>
 		</footer>
 
 	</body>
 	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		var swiper = new Swiper('.swiper-container', {
-			pagination: '.swiper-pagination',
-			nextButton: '.swiper-button-next',
-			prevButton: '.swiper-button-prev',
-			loop: true,
-			autoplay: 1500,
-			paginationClickable: true
-		});
-	</script>
+	<!-- <script src="layer/layer.js" type="text/javascript" charset="utf-8"></script> -->
+	<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 
 </html>

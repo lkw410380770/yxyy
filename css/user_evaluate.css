@@ -1,0 +1,219 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    max-width: 984px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 149px;
+    overflow: hidden;
+    margin-bottom: 266px;
+}
+
+.content .left {
+    width: 20%;
+    max-width: 180px;
+    float: left;
+}
+
+.content .left ul li {
+    width: 100%;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.active {
+    background-color: #4381e8;
+    border: 1px solid #4381e8;
+}
+
+.active a {
+    color: #fff !important;
+}
+
+.content .left ul li a {
+    color: #999;
+}
+
+.content .left ul li:hover {
+    cursor: pointer;
+}
+
+.content .left ul li:nth-child(4) {
+    background-color: gainsboro;
+}
+
+.content .left ul li:nth-child(4) a {
+    color: white;
+}
+
+.content .right {
+    display: inline-block;
+    width: 80%;
+    border: 1px solid #eee;
+    text-align: left;
+    float: right;
+    max-width: 740px;
+    border-radius: 5px;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+.content .right .title {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+}
+
+.content .right .title h2 {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: normal;
+    color: #666;
+}
+
+.content .right .c-list {
+    width: 100%;
+}
+
+.content .right .c-list table {
+    width: 100%;
+}
+
+.content .right .c-list table thead {
+    width: 100%;
+    background-color: #eee;
+}
+
+.content .right .c-list table thead tr {
+    height: 41px;
+}
+
+.content .right .c-list table thead tr th {
+    font-size: 14px;
+    color: #666;
+    font-weight: normal;
+}
+
+.content .right .c-list table tbody tr {
+    height: 90px;
+}
+
+.content .right .c-list table tbody tr:nth-child(2n+1) {
+    background-color: #f2f8ff;
+}
+
+.content .right .c-list table thead tr th:nth-of-type(1) {
+    width: 35%;
+    text-indent: 20px;
+}
+
+.content .right .c-list table thead tr th:nth-of-type(2) {
+    text-align: center;
+}
+
+.content .right .c-list table thead tr th:nth-of-type(3) {
+    text-align: center;
+}
+
+.content .right .c-list table tbody tr th:nth-of-type(2) {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+.content .right .c-list table tbody tr th:nth-of-type(1) a {
+    margin-left: 20px;
+    display: block;
+    color: #666;
+    font-size: 12px;
+    font-weight: normal;
+    max-width: 155px;
+    line-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.content .right .c-list table tbody tr th:nth-of-type(3) {
+    text-align: center;
+    font-weight: normal;
+}
+
+.content .right .c-list table tbody tr th:nth-of-type(3) a.look-detail {
+    display: block;
+    width: 70px;
+    height: 26px;
+    border: 1px solid #e4e4e4;
+    background: #f7f7f7;
+    line-height: 26px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin: 0 auto;
+}
+
+.content .right .c-list table tbody tr th:nth-of-type(3) a.del {
+    font-size: 12px;
+    color: #999;
+    display: block;
+    margin-top: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #eeeeee;
+}
+
+.page {
+    width: 100%;
+    overflow: hidden;
+    max-width: 822px;
+    margin: 0px auto;
+    margin-top:30px;
+    margin-bottom:10px;
+    font-size: 14px;
+}
+
+.page a {
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    color: #999;
+    border: 1px solid #f0f0f0;
+    float: left;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.page a.prev {
+    margin-left: 0;
+    margin-right:10px;
+}
+.page a.next{
+	margin-left:25px;
+}
+.page a.current {
+    background-color: #ffbc2e;
+    color: #fff;
+}
+
+.page a.prev:hover,
+.page a.next:hover {
+    background-color: #ffbc2e;
+    color: #fff;
+}

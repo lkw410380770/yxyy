@@ -13,16 +13,23 @@ body {
 /*了解更多按钮样式*/
 
 .moreBtn {
-	width: 142px;
-	height: 46px;
+	width: 160px;
+	height: 42px;
+	font-size: 14px;
+	border: 1px solid #4673D8;
 	text-align: center;
 	line-height: 46px;
-	border: 1px solid gainsboro;
-	border-radius: 46px;
+	border-radius: 42px;
+	color: #4673D8;
+	transition: all .8s;
+	-webkit-transition: all .8s;
 }
 
 .moreBtn:hover {
 	cursor: pointer;
+	color: white;
+	background-color: #4381e8;
+	box-shadow: 0px 5px 10px 0px rgba(0, 63, 167, 0.8);
 }
 
 
@@ -30,78 +37,216 @@ body {
 
 .content .banner {
 	width: 100%;
-	height: 540px;
+	height: 1080px;
 }
 
 .banner .swiper-slide {
 	width: 100%;
 	height: 100%;
-	background-color: gray;
-	color: white;
+}
+
+.content .banner .banner1 {
+	background: url(../img/index_bannar.png) no-repeat center;
+}
+
+.content .banner .banner1 .text {
+	padding-top: 254px;
+	width: 90%;
+	max-width: 482px;
+	float: right;
+	margin-right: 29.6%;
+}
+
+@media only screen and (max-width: 1620px) {
+	.content .banner .banner1 .text {
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 758px) {
+	.content .banner .banner1 .text {
+		padding-top: 200px;
+	}
+}
+
+.banner .banner1 .text h2 {
 	font-size: 60px;
-	text-align: center;
-	line-height: 540px;
+	color: white;
+}
+
+.banner .banner1 .text h5 {
+	font-size: 18px;
+	font-weight: normal;
+	color: white;
+	margin-bottom: 90px;
+}
+
+.banner .banner1 .text p {
+	padding-right: 52px;
+	font-size: 16px;
+	line-height: 32px;
+	color: rgba(255, 255, 255, .8);
+	margin-top: 90px;
+}
+
+.banner .banner1 .text h6 {
+	font-size: 30px;
+	font-weight: normal;
+	color: rgba(255, 255, 255, .4);
+	margin-top: 6px;
+	margin-bottom: 70px;
+}
+
+.banner .banner1 .text .moreBtn {
+	color: white;
+	background-color: #4381e8;
+	box-shadow: 0px 5px 10px 0px rgba(0, 63, 167, 0.8);
+}
+
+@media only screen and (max-width: 600px) {
+	.banner .banner1 .text h2 {
+		font-size: 30px;
+	}
+	.banner .banner1 .text h5 {
+		font-size: 12px;
+		margin-bottom: 40px;
+	}
+	.banner .banner1 .text p {
+		padding-right: 0px;
+		font-size: 14px;
+		line-height: 28px;
+		margin-top: 40px;
+	}
+	.banner .banner1 .text h6 {
+		font-size: 24px;
+		font-weight: normal;
+		color: rgba(255, 255, 255, .4);
+		margin-top: 6px;
+		margin-bottom: 70px;
+	}
+	.banner .banner1 .text .moreBtn {
+		margin-left: 30px;
+	}
 }
 
 
 /*图片或视频介绍部分*/
 
+.content .wrapBj {
+	width: 100%;
+	padding-bottom: 114px;
+	background-image: url(../img/index_spbj.png);
+	position: relative;
+}
+
 .content .introduce {
 	width: 90%;
-	max-width: 1200px;
+	max-width: 1180px;
 	margin: 0 auto;
-	text-align: center;
+	text-align: left !important;
 	position: relative;
+	margin-top: -78px;
+	z-index: 10;
 }
 
 .introduce .wrap {
 	display: inline-block;
 	width: 60%;
-	max-width: 700px;
-	height: 432px;
-	background-color: darkkhaki;
-	margin-top: -54px;
+	max-width: 680px;
+	max-height: 400px;
+	margin-top: 0px !important;
+	overflow: hidden;
+	box-shadow: 0px 20px 30px 0px rgba(51, 51, 51, 0.3);
 	position: relative;
 	z-index: 10;
 }
 
-.introduce .text {
-	display: inline-block;
-	width: 38%;
-	float: right;
+.introduce .wrap img {
+	display: block;
+	width: 100%;
+	background-size: 100% 100%;
 }
 
-@media only screen and (max-width: 900px) {
+.wrapBj .introduce .text {
+	display: inline-block;
+	width: 38%;
+	max-width: 485px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 20px 30px 0px rgba(51, 51, 51, 0.3);
+	overflow: hidden;
+	float: right;
+	margin-right: 30px;
+	border-radius: 4px;
+	padding-bottom: 40px;
+}
+
+.introduce .text h2 {
+	font-size: 38px;
+	font-weight: normal;
+	padding: 36px 0px 0px 40px;
+}
+
+.introduce .text h4 {
+	font-size: 14px;
+	font-weight: normal;
+	padding-left: 40px;
+	color: rgba(102, 102, 102, .8);
+}
+
+.introduce .text p {
+	font-size: 16px;
+	line-height: 34px;
+	padding: 34px 0px 40px 40px;
+}
+
+.introduce .moreBtn {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+@media only screen and (max-width: 1420px) {
+	.wrapBj .introduce .text {
+		margin-right: 0px;
+	}
+	.introduce .text p {
+		padding-bottom: 20px;
+	}
+	.introduce .moreBtn {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.introduce .eg: {
+		margin-left: 0px;
+	}
+}
+
+@media only screen and (max-width: 1350px) {
 	.content .introduce {
 		text-align: center;
 	}
 	.introduce .wrap {
+		display: block;
 		width: 100%;
-		height: 432px;
 		background-color: darkkhaki;
-		margin-top: 40px;
 		clear: both;
+		margin: 0 auto;
 	}
-	.introduce .text {
-		display: inline-block;
-		width: 90%;
+	.wrapBj .introduce .text {
 		float: none;
+		clear: both;
+		display: block;
+		width: 100%;
+		max-width: 680px;
+		margin: 0 auto;
+		margin-top: 40px;
 	}
 	.introduce .text .moreBtn {
 		margin: 0 auto;
+		margin-top: 20px;
 	}
-}
-
-.introduce .text h2 {
-	font-size: 40px;
-	padding: 40px 0px;
-}
-
-.introduce .text p {
-	font-size: 18px;
-	color: #666666;
-	line-height: 34px;
-	padding-bottom: 40px;
 }
 
 
@@ -111,7 +256,7 @@ body {
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
-	margin-top: 90px;
+	margin-top: 120px;
 }
 
 .information .modular {
@@ -123,12 +268,23 @@ body {
 	margin: 0 1.2%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 900px) {
 	.information .modular {
 		display: block;
-		width: 98%;
+		width: 60%;
 		margin: 0 auto;
 		margin-bottom: 120px;
+	}
+	.information .modular:nth-child(2) {
+		margin: 0 auto;
+		margin-bottom: 120px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.information .modular {
+		display: block;
+		width: 90%;
 	}
 	.information .modular:nth-child(2) {
 		margin: 0 auto;
@@ -140,16 +296,50 @@ body {
 /*资讯分类标题*/
 
 .information .modular .title {
-	font-size: 28px;
-	padding-bottom: 30px;
+	position: relative;
+	padding: 20px 0px;
+	border-radius: 6px;
+}
+
+.information .modular .title h2 {
+	font-size: 26px;
+	font-weight: normal;
+	color: white;
+	position: absolute;
+	top: 10px;
+	left: 100px;
 }
 
 .information .modular .title span {
 	display: inline-block;
-	width: 24px;
-	height: 24px;
-	background-color: mediumaquamarine;
-	margin: 0px 20px -4px 0px;
+	width: 28px;
+	height: 30px;
+	margin: 0px 46px 0px 20px;
+}
+
+.information .modular .title label {
+	display: inline-block;
+	font-size: 16px;
+	color: rgba(255, 255, 255, .5);
+	font-weight: normal;
+	position: absolute;
+	top: 42px;
+	left: 100px;
+}
+
+@media only screen and (max-width: 400px) {
+	.information .modular .title h2 {
+		position: absolute;
+		top: 10px;
+		left: 60px;
+	}
+	.information .modular .title label {
+		display: inline-block;
+		font-size: 12px;
+		position: absolute;
+		top: 42px;
+		left: 60px;
+	}
 }
 
 
@@ -157,9 +347,36 @@ body {
 
 .information .modular .showImg {
 	width: 100%;
-	height: 208px;
-	background-color: darkkhaki;
-	margin-top: 30px;
+	margin-top: 20px;
+	position: relative;
+	max-height: 220px;
+	overflow: hidden;
+}
+
+.information .modular .showImg h6 {
+	width: 90%;
+	font-size: 16px;
+	color: white;
+	padding: 0px 0px 16px 10%;
+	background-image: -webkit-linear-gradient( 90deg, rgba(35, 35, 35, .2) 0%, rgba(255, 255, 255, 0.004) 100%);
+	opacity: 0.902;
+	position: absolute;
+	bottom: 0px;
+}
+
+.information .modular .showImg img {
+	display: block;
+	width: 100%;
+	background-size: 100% 100%;
+	ransition: all .5s;
+	-webkit-transition: all .5s;
+}
+
+.information .modular .showImg:hover .zxMaxImg {
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
 }
 
 
@@ -173,8 +390,17 @@ body {
 .information .modular .text .textImg {
 	display: inline-block;
 	width: 38%;
-	height: 108px;
-	background-color: darkkhaki;
+	max-width: 150px;
+	max-height: 100px;
+	overflow: hidden;
+}
+
+.information .modular .text .textImg img {
+	display: block;
+	width: 100%;
+	background-size: 100% 100%;
+	transition: all .5s;
+	-webkit-transition: all .5s;
 }
 
 .information .modular .text .wb {
@@ -183,25 +409,50 @@ body {
 }
 
 .information .modular .text .wb h2 {
-	font-size: 16px;
-	max-height: 46px;
+	font-size: 14px;
+	max-height: 40px;
 	overflow: hidden;
 	font-weight: normal;
 }
 
 .information .modular .text .wb p {
 	color: #999999;
-	font-size: 14px;
-	margin-top: 16px;
-	height: 42px;
+	font-size: 12px;
+	margin-top: 38px;
 	overflow: hidden;
+}
+
+@media only screen and (max-width: 1300px) {
+	.information .modular .text .wb p {
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.information .modular .text .wb p {
+		margin-top: 6px;
+	}
+}
+
+.information .modular .text:hover .imgText {
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
 }
 
 
 /*资讯了解更多按钮*/
 
-.information .modular .moreBtn {
+.information .modular .moreBtns {
 	margin-top: 40px;
+	border: none;
+	color: #4381e8;
+	font-size: 14px;
+}
+
+.information .modular .moreBtns:hover {
+	cursor: pointer;
 }
 
 @media only screen and (max-width:1100px) {
@@ -216,22 +467,31 @@ body {
 .content .growth {
 	width: 100%;
 	height: 500px;
-	background-color: gainsboro;
+	background: url(../img/index_bj.png) no-repeat center;
 	margin-top: 60px;
 	padding-top: 90px;
 }
 
 .content .growth h2 {
-	font-size: 28px;
-	font-weight: bold;
+	font-size: 38px;
+	font-weight: normal;
+	color: white;
 	text-align: center;
+	margin-top: 90px;
+}
+
+@media only screen and (max-width: 700px) {
+	.content .growth h2 {
+		font-size: 30px;
+		margin-top: 0px;
+	}
 }
 
 .content .growth h5 {
 	font-size: 16px;
 	font-weight: normal;
-	color: #999999;
-	max-width: 400px;
+	color: white;
+	max-width: 340px;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 20px;
@@ -251,66 +511,156 @@ body {
 .content .growth .moduleWrap .module {
 	display: inline-block;
 	width: 32%;
-	height: 380px;
-	position: relative;
 	margin-bottom: -116px;
 	z-index: 10;
 	background-color: white;
-	border: 1px solid black;
+	border: 1px solid #e7e7e7;
+	text-align: center;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	border-radius: 4px;
 }
 
 .content .growth .moduleWrap .module:nth-child(2) {
 	margin: 0 1.2%;
 }
 
-@media only screen and (max-width: 1100px) {
-	.content .growth {
+@media only screen and (max-width: 1200px) {
+	.content .growth .moduleWrap .module:nth-child(2) {
+		margin: 0 0.6%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.content .growth .moduleWrap {
 		width: 100%;
-		height: auto;
 		text-align: center;
 	}
-	.content .growth .moduleWrap .module {
-		display: inline-block;
-		width: 90%;
-		height: 230px;
-		margin: 0 auto;
-		margin-bottom: 30px;
-		text-align: left;
-	}
 	.content .growth .moduleWrap .module:nth-child(2) {
-		margin: 0 auto;
-		margin-bottom: 30px;
+		margin: 0 0.1%;
 	}
 }
 
 .content .growth .moduleWrap .module .showImg {
+	display: block;
 	width: 100%;
-	height: 230px;
-	background-color: darkkhaki;
+	max-height: 241px;
+	position: relative;
+	overflow: hidden;
 }
 
-@media only screen and (max-width: 960px) {
-	.content .growth .moduleWrap .module .showImg {
-		display: inline-block;
-		width: 38%;
-	}
-	.content .growth .moduleWrap .module .text {
-		width: 58%;
-		float: right;
-	}
+.content .growth .moduleWrap .module .showImg img {
+	display: block;
+	width: 100%;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+}
+
+.content .growth .moduleWrap .module:hover img{
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1)
 }
 
 .content .growth .moduleWrap .module h3 {
-	font-size: 20px;
-	padding: 20px 0px 0px 20px;
+	font-size: 18px;
+	padding: 42px 0px 0px 0px;
 }
 
 .content .growth .moduleWrap .module p {
 	font-size: 14px;
 	padding: 20px;
+	line-height: 26px;
+	max-height: 50px;
 	color: #666666;
-	max-height: 38px;
 	overflow: hidden;
+}
+
+.content .growth .moduleWrap .module .text {
+	padding-bottom: 40px;
+	position: relative;
+}
+
+.content .growth .moduleWrap .module .tP {
+	display: block;
+	padding: 0px;
+	width: 46px;
+	height: 46px;
+	max-height: none;
+	border-radius: 46px;
+	background-color: #bbcaec;
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	top: -23px;
+	left: 50%;
+	z-index: 10;
+	margin-left: -23px;
+}
+
+@media only screen and (max-width: 700px) {
+	.content .growth .moduleWrap .module .showImg {
+		display: inline-block;
+		width: 100%;
+	}
+	.content .growth .moduleWrap .module .text {
+		width: 100%;
+		float: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.content .growth .moduleWrap .module h3 {
+		font-size: 18px;
+		padding: 42px 0px 0px 0px;
+		color: white;
+	}
+	.content .growth .moduleWrap .module p {
+		display: none;
+	}
+	.content .growth .moduleWrap .module .showImg .tP {
+		width: 26px;
+		height: 26px;
+		border-radius: 26px;
+		font-size: 20px;
+		position: absolute;
+		bottom: -13px;
+		left: 50%;
+		z-index: 10;
+		margin-left: -13px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.content .growth .moduleWrap .module {
+		display: inline-block;
+		width: 48%;
+	}
+	.content .growth .moduleWrap .module img {
+		width: 100%;
+		height: 100%;
+	}
+	.content .growth .moduleWrap {
+		width: 100%;
+		text-align: center;
+	}
+	.content .growth .moduleWrap .module {
+		margin-top: 30px !important;
+	}
+	.content .growth .moduleWrap .module h3 {
+		font-size: 18px;
+		padding: 10px 0px 0px 0px;
+		color: white;
+	}
+}
+
+.content .growth .moduleWrap .module:hover {
+	box-shadow: 0px 20px 40px 0px rgba(98, 98, 98, 0.3);
+}
+
+.content .growth .moduleWrap .module:hover .tP {
+	background-color: #4673d8;
 }
 
 
@@ -318,14 +668,43 @@ body {
 
 .content .match {
 	width: 100%;
-	margin-top: 120px;
-	padding-top: 90px;
+	padding-top: 360px;
+	background-image: url(../img/index_spbj.png);
+	margin-top: -46px;
+	padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 800px) {
+	.content .match {
+		padding-top: 180px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.content .match {
+		padding-top: 80px;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.content .match {
+		padding-top: 40px;
+	}
+}
+
+.content .match h6 {
+	font-weight: normal;
+	font-size: 48px;
+	color: #cbccd1;
+	text-align: center;
+	font-family: arial;
 }
 
 .content .match h2 {
-	font-size: 28px;
-	font-weight: bold;
+	font-size: 38px;
+	font-weight: normal;
 	text-align: center;
+	margin-top: -38px;
 }
 
 .content .match h5 {
@@ -343,66 +722,91 @@ body {
 /*赛事模块*/
 
 .content .match .moduleWrap {
-	width: 90%;
-	max-width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 40px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+
+.content .match .moduleWrap a {
+	display: block;
+	width: 100%;
 }
 
 .content .match .moduleWrap .module {
 	display: inline-block;
-	width: 24%;
-	margin: 0 0.2%;
+	padding-bottom: 20px;
+	text-align: left;
+	overflow: hidden;
+	width: 100%;
+	margin: 0px;
+	margin-bottom: 30px;
+	transition: all .5s;
+	-webkit-transition: all .5s;
 }
 
-@media only screen and (max-width: 960px) {
-	.content .match {
-		width: 100%;
-		text-align: center;
-	}
-	.content .match .moduleWrap .module {
-		display: inline-block;
-		width: 90%;
-		height: 230px;
-		margin: 0 auto;
-		margin-bottom: 30px;
-		text-align: left;
-	}
-	.content .match .moduleWrap .module:nth-child(2) {
-		margin: 0 auto;
-		margin-bottom: 30px;
-	}
+.content .match .moduleWrap .swiper-slide {}
+
+.content .match .moduleWrap .module:nth-child(1) {
+	margin-left: 0px;
+}
+
+.content .match .moduleWrap .module:nth-child(5) {
+	margin-right: 0px;
 }
 
 .content .match .moduleWrap .module .showImg {
 	width: 100%;
-	height: 230px;
-	background-color: darkkhaki;
+	max-height: 208px;
+	overflow: hidden !important;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 500px) {
 	.content .match .moduleWrap .module .showImg {
-		display: inline-block;
-		width: 38%;
+		width: 100%;
+		max-height: none;
+		height: auto;
 	}
-	.content .match .moduleWrap .module .text {
-		width: 58%;
-		float: right;
-	}
+}
+
+.content .match .moduleWrap .module .showImg img {
+	display: block;
+	width: 100%;
+	background-size: 100% 100%;
+	transition: all .5s;
+	-webkit-transition: all .5s;
 }
 
 .content .match .moduleWrap .module h3 {
 	font-size: 16px;
+	color: #666666;
 	font-weight: normal;
 	padding: 20px 0px 0px 10px;
 }
 
 .content .match .moduleWrap .module p {
 	font-size: 14px;
-	padding: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
 	color: #666666;
-	max-height: 38px;
 	overflow: hidden;
+}
+
+.content .match .moduleWrap .module:hover h3 {
+	color: black;
+}
+
+.content .match .moduleWrap .module:hover {
+	background-color: white;
+	box-shadow: 0px 20px 30px 0px rgba(45, 44, 44, 0.2);
+}
+
+.content .match .moduleWrap .module:hover .yyssImg {
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
 }
 
 
@@ -419,21 +823,28 @@ body {
 
 .content .service {
 	width: 100%;
-	margin-top: 20px;
 	padding-top: 90px;
 }
 
-.content .service h2 {
-	font-size: 28px;
-	font-weight: bold;
+.content .service h6 {
+	font-weight: normal;
+	font-size: 48px;
+	color: #cbccd1;
 	text-align: center;
+	font-family: "blackadder itc";
+}
+
+.content .service h2 {
+	font-size: 38px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: -38px;
 }
 
 .content .service h5 {
 	font-size: 16px;
 	font-weight: normal;
-	color: #999999;
-	max-width: 400px;
+	max-width: 360px;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 20px;
@@ -447,19 +858,37 @@ body {
 
 .content .service ul li {
 	display: inline-block;
-	padding: 5px 10px;
-	margin: 0 20px;
+	margin: 0 10px;
 }
 
 .content .service ul li a {
 	color: #666666;
-	font-size: 18px;
+	padding: 10px 30px;
+	border-radius: 36px;
+	font-size: 14px;
+	color: #929292;
+	border: 1px solid #cccccc;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+}
+
+.content .service ul li:nth-child(1) a {
+	background-color: #4381e8;
+	color: white;
+	border-color: #4381e8;
+}
+
+@media only screen and (max-width: 800px) {
+	.content .service ul li {
+		margin-bottom: 40px;
+	}
 }
 
 .content .service ul li a:hover {
 	cursor: pointer;
-	font-weight: bold;
-	color: black;
+	background-color: #4381e8;
+	border-color: #4381e8;
+	color: white;
 }
 
 
@@ -469,13 +898,14 @@ body {
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: 80px;
 }
 
 .content .service .moduleWrap .module {
 	display: inline-block;
 	width: 48%;
 	margin: 0 0.5%;
+	margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 960px) {
@@ -500,8 +930,15 @@ body {
 .content .service .moduleWrap .module .showImg {
 	display: inline-block;
 	width: 48%;
-	height: 230px;
-	background-color: darkkhaki;
+	overflow: hidden;
+}
+
+.content .service .moduleWrap .module .showImg img {
+	display: block;
+	width: 100%;
+	background-size: 100% 100%;
+	transition: all .5s;
+	-webkit-transition: all .5s;
 }
 
 .content .service .moduleWrap .module .text {
@@ -509,10 +946,48 @@ body {
 	float: right;
 }
 
+@media only screen and (max-width: 600px) {
+	.content .service .moduleWrap .module {
+		display: inline-block;
+		width: 90%;
+		height: auto;
+		margin: 0 auto;
+		margin-bottom: 60px;
+		text-align: left;
+	}
+	.content .service .moduleWrap .module:nth-child(2) {
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.content .service .moduleWrap .module .showImg {
+		display: block;
+		width: 100%;
+	}
+	.content .service .moduleWrap .module .text {
+		float: none;
+		clear: both;
+		display: block;
+		width: 100%;
+	}
+}
+
+.content .service .moduleWrap .module span {
+	font-size: 12px;
+	color: #999999;
+}
+
+.content .service .moduleWrap .module span i {
+	display: inline-block;
+	margin-right: 8px;
+}
+
 .content .service .moduleWrap .module h3 {
 	font-size: 16px;
 	font-weight: normal;
+	max-height: 50px;
+	overflow: hidden;
 	padding: 20px 0px 0px 0px;
+	line-height: 28px;
 }
 
 .content .service .moduleWrap .module p {
@@ -521,6 +996,24 @@ body {
 	color: #666666;
 	max-height: 38px;
 	overflow: hidden;
+	padding-top: 40px;
+}
+
+@media only screen and (max-width: 1300px) {
+	.content .service .moduleWrap .module p {
+		padding-top: 20px;
+	}
+}
+
+.content .service .moduleWrap .module:hover {
+	cursor: pointer;
+}
+
+.content .service .moduleWrap .module:hover .kyImg {
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
 }
 
 
@@ -529,5 +1022,93 @@ body {
 .content .service .moreBtn {
 	display: block;
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 20px;
+	margin-bottom: 70px;
+}
+
+
+/*swiper标签*/
+
+@keyframes widthMove {
+	from {
+		width: 10px;
+	}
+	to {
+		width: 50px;
+	}
+}
+
+@-webkit-keyframes widthMove {
+	from {
+		width: 10px;
+	}
+	to {
+		width: 50px;
+	}
+}
+
+@-ms-keyframes widthMove {
+	from {
+		width: 10px;
+	}
+	to {
+		width: 50px;
+	}
+}
+
+@-moz-keyframes widthMove {
+	from {
+		width: 10px;
+	}
+	to {
+		width: 50px;
+	}
+}
+
+.swiper-pagination span {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 8px;
+}
+
+.swiper-pagination-bullet-active {
+	display: inline-block;
+	animation: widthMove .5s linear;
+	animation-fill-mode: forwards;
+	background-color: #4673d8;
+	height: 8px;
+}
+
+.content .banner .swiper-pagination span {
+	background-color: white;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background-color: #4673d8 !important;
+}
+
+
+/*.content .banner .swiper-pagination .swiper-pagination-bullet-active{
+	background-color: #4673d8 !important;
+}*/
+
+
+/*脚标隐藏*/
+
+.content .match .swiper-pagination span {
+	display: none;
+}
+
+.content .match .swiper-pagination .swiper-pagination-bullet-active {
+	display: inline-block;
+}
+
+.content .match .swiper-pagination .swiper-pagination-bullet-active+span {
+	display: inline-block;
+}
+
+.content .match .swiper-pagination .swiper-pagination-bullet-active+span+span {
+	display: inline-block;
 }
