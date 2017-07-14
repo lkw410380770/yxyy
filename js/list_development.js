@@ -1,32 +1,15 @@
 $(function() {
     var leftLi = $('.left>ul>li');
     leftLi.on('mouseover', function() {
-        $(this).find('strong').addClass('width70');
-        $(this).find('span').addClass('color');
+        $(this).addClass('hoverS');
     });
-    leftLi.on('mouseout', function() {
-        $(this).find('strong').removeClass('width70');
-        // $(this).find('span').removeClass('color');
-        // $(this).find('span').addClass('color1');
-        if($(this).find('strong').hasClass('width100')){
-        	return;
-        }else{
-        	$(this).find('span').removeClass('color');
-        }
+   leftLi.on('mouseout', function() {
+        $(this).removeClass('hoverS');
     });
     leftLi.on('click', function() {
-        var self = $(this);
-        $('.left').find('li').removeClass('border');
-        $('.left').find('strong').removeClass('width100');
-        $('.left').find('i').removeClass('i-bg');
-        $('.left').find('span').removeClass('color');
-        $('.left').find('span').removeClass('color1');
-        $(this).find('strong').addClass('width100');
-        $(this).find('span').addClass('color');
-        setTimeout(function() {
-      		self.addClass('border');
-            self.find('i').addClass('i-bg');
-        }, 300);
+        leftLi.removeClass('hoverS');
+        leftLi.removeClass('clickS');
+        $(this).removeClass('hoverS').addClass('clickS');
     });
     var pageA = $('.page');
     var pageAa = $('.page').find('a');

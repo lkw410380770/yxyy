@@ -1,6 +1,7 @@
-body{
-    background-color:#eff5ff;
+body {
+    background-color: #eff5ff;
 }
+
 // 顶部图片样式
 .head-pic {
     width: 100%;
@@ -9,13 +10,32 @@ body{
     // background-size: cover;
 }
 
-.head-pic h3 {
+.head-pic .topfont {
+    width: 100%;
+    padding-top: 179px;
+    position: relative;
+    text-align: center;
+}
+
+.head-pic .topfont h4 {
+    font-size: 48px;
+    color: #fff;
+    opacity: 0.3;
+    text-align: center;
+    font-weight: 400;
+    font-family: htop;
+}
+
+.head-pic .topfont h3 {
     font-size: 38px;
     color: #fff;
-    padding-top: 197px;
     margin-bottom: 25px;
     text-align: center;
     font-weight: normal;
+    position: absolute;
+    left: 50%;
+    margin-left: -79px;
+    top: 197px;
 }
 
 .head-pic p {
@@ -27,22 +47,24 @@ body{
     font-size: 16px;
     color: #fff;
     text-align: center;
+    margin-top: 31px;
 }
 
 // end
 // 主体内容
-.bg-wrap{
-    width:1200px;
-    margin:0 auto;
-   padding-bottom:77px;
+.bg-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 77px;
 }
+
 .wrap {
     width: 100%;
     max-width: 1180px;
     position: relative;
     top: -43px;
-    overflow:hidden;
-    margin:0 auto;
+    overflow: hidden;
+    margin: 0 auto;
     .left {
         width: 24%;
         float: left;
@@ -58,6 +80,7 @@ body{
                 line-height: 60px;
                 position: relative;
                 cursor: pointer;
+                box-sizing:border-box;
                 strong {
                     width: 4px;
                     height: 60px;
@@ -68,6 +91,7 @@ body{
                     transition: all 0.5s;
                     -webkit-transition: all 0.5s;
                     z-index: 9;
+                    box-sizing:border-box;
                 }
                 span {
                     float: left;
@@ -90,51 +114,26 @@ body{
                     z-index: 10;
                 }
             }
-            .border {
-                border: 1px solid #4381e8;
+            .hoverS {
+                strong {
+                    width: 70%;
+                }
+                span{
+                    color:#fff;
+                }
             }
-            .width70 {
-                width: 70%;
+            .clickS{
+                strong {
+                    width: 101%;
+                }
+                span{
+                    color:#fff;
+                } 
+                i{
+                    background: url('../img/a-icon-aroow.png') no-repeat center center;
+                }
             }
-            .width100 {
-                width: 100%;
-                left: 0;
-            }
-            .color {
-                color: #fff;
-            }
-            .color1 {
-                color: #fff;
-            }
-            .i-bg {
-                background: url('../img/a-icon-aroow.png') no-repeat center center;
-            }
-            // li:hover strong{
-            //     transition:all 0.5s;
-            //     -webkit-transition:all 0.5s;
-            //     width:70%;
-            // }
-            // li:hover span{
-            //     color:#fff;
-            // }
-            // .active{
-            //     transition:all 0.5s;
-            //     -webkit-transition:all 0.5s;
-            //     color:#fff;
-            //     border:none;
-            //     height:60px;
-            // }
-            // .active span{
-            //     color:#fff;
-            // }
-            // .active i{
-            //      background: url('../img/a-icon-aroow.png') no-repeat center center;
-            //  }
-            // .active strong{
-            //      transition:all 0.5s;
-            //     -webkit-transition:all 0.5s;
-            //     width:100%;
-            //   }
+           
         }
     }
     .right {
@@ -189,9 +188,9 @@ body{
         .page {
             width: 100%;
             overflow: hidden;
-            max-width:822px;
-            margin:30px auto;
-            font-size:14px;
+            max-width: 822px;
+            margin: 30px auto;
+            font-size: 14px;
             a {
                 display: block;
                 width: 28px;
@@ -207,13 +206,14 @@ body{
             a.prev {
                 margin-left: 0;
             }
-            a.current{
-                background-color:#ffbc2e;
-                color:#fff;
+            a.current {
+                background-color: #ffbc2e;
+                color: #fff;
             }
-            a.prev:hover,a.next:hover{
-                 background-color:#ffbc2e;
-                color:#fff;
+            a.prev:hover,
+            a.next:hover {
+                background-color: #ffbc2e;
+                color: #fff;
             }
         }
     }
@@ -228,7 +228,7 @@ body{
 }
 
 .tab-right .right-box {
-    display:none;
+    display: none;
     width: 100%;
     overflow: hidden;
     margin-top: 20px;
@@ -383,9 +383,9 @@ body{
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
-                    line-height:25px;
-                    i{
-                        color:#999;
+                    line-height: 25px;
+                    i {
+                        color: #999;
                     }
                 }
                 .width32 {
@@ -395,19 +395,19 @@ body{
                     width: 110px;
                     margin-right: 20px;
                 }
-                .width90{
-                    width:92% !important;
+                .width90 {
+                    width: 92% !important;
                 }
-                .paddingbottom{
-                    padding-bottom:10px;
+                .paddingbottom {
+                    padding-bottom: 10px;
                 }
-                .height50{
-                    height:50px;
+                .height50 {
+                    height: 50px;
                 }
                 .icon {
-                     width: 80%;
+                    width: 80%;
                     float: left;
-                    margin-top:21px;
+                    margin-top: 21px;
                     span {
                         font-size: 12px;
                         color: #999;
@@ -426,14 +426,13 @@ body{
                         display: inline-block;
                         line-height: 16px;
                     }
-
                     span.x1 i {
                         font-size: 30px;
                     }
-                     span.x2{
+                    span.x2 {
                         font-size: 14px;
-                        display:inline-block;
-                        width:100px;
+                        display: inline-block;
+                        width: 100px;
                     }
                     span.x2 i {
                         font-size: 14px;
@@ -456,14 +455,14 @@ body{
                     font-weight: normal;
                 }
             }
-            li:last-child{
-                border-bottom:1px solid #e4e4e4;
+            li:last-child {
+                border-bottom: 1px solid #e4e4e4;
             }
-            li:hover{
-                background-color:#f2f7ff;
+            li:hover {
+                background-color: #f2f7ff;
             }
-            li:hover .pic i{
-                color:#ffbc2e;
+            li:hover .pic i {
+                color: #ffbc2e;
             }
         }
     }

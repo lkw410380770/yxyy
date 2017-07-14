@@ -9,13 +9,30 @@ body{
     // background-size: cover;
 }
 
-.head-pic h3 {
+.head-pic .topfont{
+    width:100%;
+    padding-top:179px;
+    position:relative;
+    text-align:center;
+}
+.head-pic .topfont h4{
+    font-size:48px;
+    color:#fff;
+    opacity:0.3;
+    text-align:center;
+    font-weight:400;
+    font-family:htop;
+}
+.head-pic .topfont h3 {
     font-size: 38px;
     color: #fff;
-    padding-top: 197px;
     margin-bottom: 25px;
     text-align: center;
     font-weight: normal;
+    position:absolute;
+    left:50%;
+    margin-left:-79px;
+    top:197px;
 }
 
 .head-pic p {
@@ -27,6 +44,7 @@ body{
     font-size: 16px;
     color: #fff;
     text-align: center;
+    margin-top:31px;
 }
 
 // end
@@ -58,6 +76,7 @@ body{
                 line-height: 60px;
                 position: relative;
                 cursor: pointer;
+                box-sizing: border-box;
                 strong {
                     width: 4px;
                     height: 60px;
@@ -90,51 +109,26 @@ body{
                     z-index: 10;
                 }
             }
-            .border {
-                border: 1px solid #4381e8;
+            .hoverS {
+               
+                strong {
+                    width: 70%;
+                }
+                span{
+                    color:#fff;
+                }
             }
-            .width70 {
-                width: 70%;
+            .clickS{
+                strong {
+                    width: 101%;
+                }
+                span{
+                    color:#fff;
+                }
+                i{
+                    background: url('../img/a-icon-aroow.png') no-repeat center center;
+                }
             }
-            .width100 {
-                width: 100%;
-                left: 0;
-            }
-            .color {
-                color: #fff;
-            }
-            .color1 {
-                color: #fff;
-            }
-            .i-bg {
-                background: url('../img/a-icon-aroow.png') no-repeat center center;
-            }
-            // li:hover strong{
-            //     transition:all 0.5s;
-            //     -webkit-transition:all 0.5s;
-            //     width:70%;
-            // }
-            // li:hover span{
-            //     color:#fff;
-            // }
-            // .active{
-            //     transition:all 0.5s;
-            //     -webkit-transition:all 0.5s;
-            //     color:#fff;
-            //     border:none;
-            //     height:60px;
-            // }
-            // .active span{
-            //     color:#fff;
-            // }
-            // .active i{
-            //      background: url('../img/a-icon-aroow.png') no-repeat center center;
-            //  }
-            // .active strong{
-            //      transition:all 0.5s;
-            //     -webkit-transition:all 0.5s;
-            //     width:100%;
-            //   }
         }
     }
     .right {
